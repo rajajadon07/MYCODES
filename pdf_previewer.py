@@ -8,7 +8,7 @@ if pdf_file is not None:
  st.write(pdf_details)
 if pdf_file=="application/pdf":
  read_pdf=str(pdf_file.read(),"utf-8")
- st.write(read_pdf)
+ st.text(read_pdf)
  
  
  
