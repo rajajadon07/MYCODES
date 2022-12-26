@@ -1,5 +1,4 @@
 import streamlit as st
-from PIL import image
 import docx2txt
 import pdfplumber
 st.title("PDF upload and previewer")
