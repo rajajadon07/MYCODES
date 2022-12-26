@@ -4,5 +4,7 @@ st.subheader("let's start")
 pdf_file=st.file_uploader("upload your pdf file",type=["pdf"])
 st.button("Process")
 if pdf_file is not None:
- pass
+ pdf_details={"pdf_name":pdf_file.name,"pdf_size":pdf_file.size,"pdf_type":pdf_file.type}
+ st.write(pdf_details)
+ 
  
