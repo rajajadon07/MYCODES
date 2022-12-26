@@ -1,8 +1,7 @@
 import streamlit as st
-import PyPDF2 as pd
 st.title("PDF upload and previewer")
 st.subheader("let's start")
-pd_file=st.file_uploader("upload your pdf file",type=["pdf"])
+pdf_file=st.file_uploader("upload your pdf file",type=["pdf"])
 st.button("Process")
-if pd_file is not None:
+if pdf_file is not None:
  st.write(type(pdf_file))
