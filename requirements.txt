@@ -1,0 +1,2 @@
+docx2txt==0.8
+pdfplumber==0.7.6
