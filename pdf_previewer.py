@@ -5,4 +5,4 @@ st.subheader("let's start")
 
 pdf_file=st.file_uploader("upload your pdf file",type=["pdf"])
 if pdf_file is not None:
-st.write(type(pdf_file))
+ st.write(type(pdf_file))
