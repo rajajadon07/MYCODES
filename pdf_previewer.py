@@ -12,6 +12,3 @@ if pdf_file is not None:
 if pdf_file=="application/pdf":
  read_pdf=str(pdf_file.read(),"utf-8")
  st.text(read_pdf)
- 
- 
- 
