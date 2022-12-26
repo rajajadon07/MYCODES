@@ -1,6 +1,6 @@
 PyPDF2==3.0.0
 streamlit-tags==1.2.8
-pafy==0.5.4
+pip install pafy==0.5.4
 streamlit==0.80.0
 pandas==1.0.5
 numpy==1.18.5
