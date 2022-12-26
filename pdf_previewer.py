@@ -8,6 +8,7 @@ if pdf_file is not None:
  st.write(pdf_details)
 if pdf_file=="application/pdf":
  read_pdf=pdf_file.read()
+ st.write(read_pdf)
  
  
  
