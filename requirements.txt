@@ -1,4 +1,3 @@
-pip install --upgrade pip
 docx2txt==0.8
 pdfplumber==0.7.6
 PIL==1.5.2
