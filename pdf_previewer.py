@@ -1,5 +1,5 @@
 import streamlit as st
-import pyPDF2
+import PyPDF2
 st.title("PDF upload and previewer")
 st.subheader("let's start")
 
