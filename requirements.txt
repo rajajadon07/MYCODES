@@ -1,4 +1,5 @@
 pip-upgrade
 docx2txt==0.8
 pdfplumber==0.7.6
-
+PIL==2.5
+PyPDF2==3.0.0
