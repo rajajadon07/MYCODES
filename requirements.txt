@@ -1,6 +1,6 @@
 PyPDF2==3.0.0
 streamlit-tags==1.2.8
-PIL/image==1.5.33
+Pillow==9.3.0
 streamlit==0.80.0
 pandas==1.0.5
 numpy==1.18.5
