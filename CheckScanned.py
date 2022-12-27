@@ -15,7 +15,7 @@ import nltk
 
 
 def show_pdf(file_path):
-    with open(file_path, "C:\Users\rjadon\Documents\Scanned_UnScanned\temp\fb.pdf") as f:
+    with open(file_path, 'C:\Users\rjadon\Documents\Scanned_UnScanned\temp\fb.pdf') as f:
         base64_pdf = base64.b64encode(f.read()).decode('utf-8')
     # pdf_display = f'<embed src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf">'
     pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'
