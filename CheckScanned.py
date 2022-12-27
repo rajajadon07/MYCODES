@@ -25,7 +25,7 @@ def show_pdf(file_path):
 
 def run():
     st.title("Scanned or Digital PDF Identifier")
-    img = Image.open("../logo.jpg")
+    img = Image.open("./Logo/logo.jpg")
     st.image(img)
 
     
