@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import base64,random
 import time,datetime
+import pdfplumber
 import PyPDF2
 from PyPDF2 import PdfFileWriter, PdfFileReader
 import io,random
