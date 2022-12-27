@@ -36,9 +36,9 @@ def run():
         
         
         if pdf_file is not None:
-            save_image_path = './temp'+pdf_file.name
+            save_image_path = 'C:\Users\rjadon\Documents\Scanned_UnScanned'+pdf_file.name
             
-            directory = r'MYCODES/Temp/fb.pdf'
+            directory = r'C:\Users\rjadon\Documents\Scanned_UnScanned\temp\fb.pdf'
             st.text(directory)
 
             pdfFileObj = open(pdf_file.name, 'rb')
