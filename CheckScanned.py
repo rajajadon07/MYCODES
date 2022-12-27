@@ -40,7 +40,7 @@ def run():
             directory = r'MYCODES/Temp/fb.pdf'
             st.text(directory)
 
-            pdfFileObj = open(pdf_file.name, 'fb.pdf')
+            pdfFileObj = open(pdf_file.name, 'rb')
             pdfReader = PyPDF2.PdfFileReader(pdfFileObj , strict=False)
             page_data = pdfReader.getPage(0)
 
