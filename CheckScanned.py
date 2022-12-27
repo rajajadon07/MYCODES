@@ -36,13 +36,13 @@ def run():
         
         
         if pdf_file is not None:
-            save_image_path = 'C:/Users/rjadon/Documents/Scanned_UnScanned'+pdf_file.name
+            save_image_path = 'C:/Users/rjadon/Documents/Scanned_UnScanned'+ pdf_file.name
             
             directory = r'C:\Users\rjadon\Documents\Scanned_UnScanned\temp\fb.pdf'
             st.text(directory)
 
             pdfFileObj = open(pdf_file.name, 'rb')
-            pdfReader = PyPDF2.PdfFileReader(pdfFileObj , strict=False)
+            pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
             page_data = pdfReader.getPage(0)
 
             if '/Font' in page_data['/Resources']:
