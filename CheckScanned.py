@@ -3,7 +3,7 @@ import pandas as pd
 import base64,random
 import time,datetime
 import PyPDF2
-from PyPDF2 import PdfFileWriter, PdfReader
+from PyPDF2 import PdfFileWriter, PdfFileReader
 import io,random
 from streamlit_tags import st_tags
 from PIL import Image
