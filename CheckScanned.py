@@ -13,7 +13,6 @@ import nltk
 
 
 
-file_path('C:\Users\rjadon\Documents\Scanned_UnScanned\temp')
 def show_pdf(file_path):
     with open(file_path, 'rb') as f:
         base64_pdf = base64.b64encode(f.read()).decode('utf-8')
