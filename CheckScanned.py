@@ -7,7 +7,6 @@ from PyPDF2 import PdfFileWriter, PdfFileReader
 import io,random
 from streamlit_tags import st_tags
 from PIL import Image
-import pafy
 import plotly.express as px
 import docx2txt
 import nltk
