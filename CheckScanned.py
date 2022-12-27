@@ -3,7 +3,6 @@ import pandas as pd
 import base64,random
 import time,datetime
 import PyPDF2
-import pafy
 from PyPDF2 import PdfFileWriter, PdfFileReader
 import io,random
 from streamlit_tags import st_tags
