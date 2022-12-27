@@ -15,7 +15,7 @@ import nltk
 
 
 def show_pdf(file_path):
-    with open(file_path, "fb") as f:
+    with open(file_path, "C:\Users\rjadon\Documents\Scanned_UnScanned\temp\fb.pdf") as f:
         base64_pdf = base64.b64encode(f.read()).decode('utf-8')
     # pdf_display = f'<embed src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf">'
     pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'
@@ -25,7 +25,7 @@ def show_pdf(file_path):
 
 def run():
     st.title("Scanned or Digital PDF Identifier")
-    img = Image.open('.MYCODES/Logo/logo.jpg')
+    img = Image.open('C:\Users\rjadon\Documents\Scanned_UnScanned\logo.jpg')
     st.image(img)
 
     
@@ -35,12 +35,12 @@ def run():
         
         
         if pdf_file is not None:
-            save_image_path = 'MYCODES/Temp/'+pdf_file.name
+            save_image_path = 'C:\Users\rjadon\Documents\Scanned_UnScanned\temp'+pdf_file.name
             
-            directory = r'MYCODES/fb.pdf'
+            directory = r'C:\Users\rjadon\Documents\Scanned_UnScanned\temp\fb.pdf'
             st.text(directory)
 
-            pdfFileObj = open(pdf_file.name, 'rb')
+            pdfFileObj = open(pdf_file.name, 'fb')
             pdfReader = PyPDF2.PdfFileReader(pdfFileObj , strict=False)
             page_data = pdfReader.getPage(0)
 
