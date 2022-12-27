@@ -42,7 +42,7 @@ def run():
             st.text(directory)
 
             pdfFileObj = open(pdf_file.name, 'rb')
-            pdfReader = PyPDF2.PdfFileReader(pdfFileObj , strict=True)
+            pdfReader = PyPDF2.PdfFileReader(pdfFileObj , strict=False)
             page_data = pdfReader.getPage(0)
 
             if '/Font' in page_data['/Resources']:
