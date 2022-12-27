@@ -52,7 +52,7 @@ def run():
                 st.text(page_data['/Resources'].keys())    
                               
                    
-            with open(save_image_path, "./Logo/logo.jpg") as f:
+            with open(save_image_path, "wb") as f:
                 f.write(pdf_file.getbuffer())
             show_pdf(save_image_path)            
                                      
