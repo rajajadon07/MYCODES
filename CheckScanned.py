@@ -26,7 +26,7 @@ def show_pdf(file_path):
 
 def run():
     st.title("Scanned or Digital PDF Identifier")
-    img = Image.open('./Logo/logo.jpg')
+    img = Image.open('.MYCODES/Logo/logo.jpg')
     st.image(img)
 
     
@@ -36,9 +36,9 @@ def run():
         
         
         if pdf_file is not None:
-            save_image_path = './Temp/'+pdf_file.name
+            save_image_path = 'MYCODES/Temp/'+pdf_file.name
             
-            directory = r'C:\Users\mokhan\Anaconda3\Brown Field Project\DigOrScan\Test2.pdf'
+            directory = r'MYCODES/fb.pdf'
             st.text(directory)
 
             pdfFileObj = open(pdf_file.name, 'rb')
