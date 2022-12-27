@@ -31,7 +31,8 @@ def run():
     
     if True:
         pdf_file = st.file_uploader("Choose your file", type=["pdf"])
-        st.text(pdf_file.name)
+        if True:
+         st.text(pdf_file.name)
         
         
         if pdf_file is not None:
