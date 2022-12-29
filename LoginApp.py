@@ -1,6 +1,6 @@
 import streamlit as st
 
-def main():
+
 
 
   st.title("Simple Login App")
@@ -38,4 +38,5 @@ def main():
   elif choice=="Signup":
      st.subheader("Create New Account")
       
- main()
+      
+     
