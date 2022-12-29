@@ -22,12 +22,12 @@ if uploaded_file:
         ('Ship Mode', 'Segment', 'Category', 'Sub-Category'),
     )
        
- fig=px.bar(
+   fig=px.bar(
    df_grouped,
    x=groupby_column,
    y='Sales'
    )
     
- st.plotly_chart(fig)
+   st.plotly_chart(fig)
 
    
