@@ -8,11 +8,11 @@ menu=["Home","Login","Signup"]
 choice=st.sidebar.selectbox("Menu",menu)
   
     
-  if choice=="Home":
+if choice=="Home":
      st.subheader("Home")
 
 
-  elif choice=="Login":
+elif choice=="Login":
      st.subheader("Login Section")
 
  
@@ -34,8 +34,7 @@ choice=st.sidebar.selectbox("Menu",menu)
             st.warning("Incorrect username/Password")
        
 
-
-  elif choice=="Signup":
+elif choice=="Signup":
      st.subheader("Create New Account")
       
       
