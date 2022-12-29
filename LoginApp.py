@@ -3,9 +3,9 @@ import streamlit as st
 
 
 
-  st.title("Simple Login App")
-  menu=["Home","Login","Signup"]
-  choice=st.sidebar.selectbox("Menu",menu)
+st.title("Simple Login App")
+menu=["Home","Login","Signup"]
+choice=st.sidebar.selectbox("Menu",menu)
   
     
   if choice=="Home":
