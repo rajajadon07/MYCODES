@@ -20,6 +20,7 @@ if uploaded_file:
     groupby_column = st.selectbox(
         'What would you like to analyse?',
         ('Ship Mode', 'Segment', 'Category', 'Sub-Category'),
+    )
        
 fig=px.bar(
    df_grouped,
