@@ -8,7 +8,7 @@ def main():
   choice=st.sidebar.selectbox("Menu",menu)
   
     
-  if choice=="Home"
+  if choice=="Home":
      st.subheader("Home")
 
 
