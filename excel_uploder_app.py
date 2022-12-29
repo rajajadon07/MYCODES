@@ -17,11 +17,14 @@ if uploaded_file:
         'What would you like to analyse?',
         ('Ship Mode', 'Segment', 'Category', 'Sub-Category'),
     )
+    output_columns = ['Sales', 'Profit']
+    df_grouped = df.groupby(by=[groupby_column], as_index=False)[output_columns].sum()
        
-   fig = px.bar(
+    fig = px.bar(
+       df_grouped,
        x=groupby_column,
        y='Sales'
-   )
-   st.plotly_chart(fig)
+    )
+    st.plotly_chart(fig)
 
    
