@@ -37,3 +37,5 @@ def main():
 
   elif choice=="Signup":
      st.subheader("Create New Account")
+      
+ main()
