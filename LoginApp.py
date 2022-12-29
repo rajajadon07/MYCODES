@@ -22,7 +22,7 @@ def main():
           if password=='12345':
             st.success("Logged in as {}".format(Username))
 
-            task=st.selectbox("Task,["ADD Post","Analytics","Profiles"]")
+            task=st.selectbox("Task",["ADD Post","Analytics","Profiles"])
             if task=="Add Post":
             st.subheader("Add Your Post")
 
