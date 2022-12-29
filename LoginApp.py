@@ -23,7 +23,7 @@ elif choice=="Login":
             
             st.success("Logged in as {}".format(username))
 
-            task=st.selectbox("Task",["ADD Post","Analytics","Profiles"])
+            task=st.selectbox("Task",["Add Post","Analytics","Profiles"])
             if task=="Add Post":
                st.subheader("Add Your Post")
 
