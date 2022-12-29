@@ -18,7 +18,7 @@ def main():
  
      username=st.sidebar.text_input("User Name")
      password=st.sidebar.text_input("Password",type=password)
-     st.sidebarbutton("Login"):
+     st.chechkbox("Login"):
        st.success("Logged in as {}".format(Username))
 
        task=st.selectbox("Task,["ADD Post","Analytics","Profiles"]")
@@ -29,6 +29,8 @@ def main():
             st.subheader("Analytics")
        elif task=="Profiles":
             st.subheader("User Profiles")
+       else
+            st.warning("Incorrect username/Password")
        
 
 
