@@ -30,7 +30,7 @@ def main():
                st.subheader("Analytics")
             elif task=="Profiles":
                st.subheader("User Profiles")
-          else
+          else:
             st.warning("Incorrect username/Password")
        
 
