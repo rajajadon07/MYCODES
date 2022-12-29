@@ -18,18 +18,19 @@ def main():
  
      username=st.sidebar.text_input("User Name")
      password=st.sidebar.text_input("Password",type=password)
-     st.chechkbox("Login"):
-       st.success("Logged in as {}".format(Username))
+     if st.chechkbox.("Login"):
+          if password=='12345':
+            st.success("Logged in as {}".format(Username))
 
-       task=st.selectbox("Task,["ADD Post","Analytics","Profiles"]")
-       if task=="Add Post":
-          st.subheader("Add Your Post")
+            task=st.selectbox("Task,["ADD Post","Analytics","Profiles"]")
+            if task=="Add Post":
+            st.subheader("Add Your Post")
 
-       elif task=="Analytics":
-            st.subheader("Analytics")
-       elif task=="Profiles":
-            st.subheader("User Profiles")
-       else
+            elif task=="Analytics":
+               st.subheader("Analytics")
+            elif task=="Profiles":
+               st.subheader("User Profiles")
+         else
             st.warning("Incorrect username/Password")
        
 
