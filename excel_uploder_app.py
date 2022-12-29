@@ -28,5 +28,6 @@ if uploaded_file:
     x=groupby_column,
     y='Sales'
     )
+    st.plotly_chart(fig)
 
    
