@@ -12,7 +12,7 @@ def main():
      st.subheader("Home")
 
 
-  elif choice=="Login"
+  elif choice=="Login":
      st.subheader("Login Section")
 
  
