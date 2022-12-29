@@ -5,3 +5,4 @@ streamlit-tags==1.2.7
 plotly-express==0.4.1
 nltk==3.5
 pafy==0.5.5
+openpyxl==3.0.6
