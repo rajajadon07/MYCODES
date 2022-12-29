@@ -27,6 +27,6 @@ fig=px.bar(
    y='Sales'
    )
     
-    st.plotly_chart(fig)
+ st.plotly_chart(fig)
 
    
