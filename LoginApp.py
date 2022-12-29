@@ -10,7 +10,7 @@ choice=st.sidebar.selectbox("Menu",menu)
     
 if choice=="Home":
      st.subheader("Home")
-     st.text("Welcome (username) How are you ?")
+     st.text("Welcome USER How are you ?")
 
 
 elif choice=="Login":
