@@ -22,5 +22,11 @@ if uploaded_file:
     output_columns = ['Sales', 'Profit']
     df_grouped = df.groupby(by=[groupby_column], as_index=False)[output_columns].sum()
     st.dataframe(df_grouped)
+    
+    fig=px.bar(
+    df_grouped,
+    x=groupby_column,
+    y='Sales'
+    )
 
    
