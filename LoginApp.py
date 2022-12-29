@@ -24,7 +24,7 @@ def main():
 
             task=st.selectbox("Task",["ADD Post","Analytics","Profiles"])
             if task=="Add Post":
-            st.subheader("Add Your Post")
+               st.subheader("Add Your Post")
 
             elif task=="Analytics":
                st.subheader("Analytics")
