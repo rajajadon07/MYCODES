@@ -41,8 +41,9 @@ def run():
             
             directory = r'.\Scanned_UnScanned\temp'
             st.text(directory)
-
-            pdfFileObj = open(pdf_file.name, 'rb') 
+            
+            pdf_name=pdf_file.name
+            pdfFileObj = open(pdf_name, 'rb') 
             pdf_Reader = PdfReader(pdfFileObj)
             page_data = pdf_Reader.pages[0]
          
