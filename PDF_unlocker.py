@@ -1,6 +1,6 @@
 import pikepdf
 import streamlit as st
-from PyPDF2 import PdfFileMerger
+from PyPDF2 import PdfWriter
 
 st.title("PDF unlocker")
 
