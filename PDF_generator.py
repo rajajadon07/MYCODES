@@ -2,7 +2,7 @@ import streamlit as st
 from fpdf import FPDF
 import base64
 
-report_text = st.text_input("Report Text")
+report_text = st.text_area("Report Text")
 
 
 export_as_pdf = st.button("Export Report")
