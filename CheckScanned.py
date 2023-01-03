@@ -45,13 +45,7 @@ def run():
             pdfFileObj = open(pdf_file.name, 'rb') 
             pdf_Reader = PdfReader(pdfFileObj)
             page_data = pdf_Reader.pages[0]
-            count=0
-            
-            for image_file_object in page_data.images:
-                with open(str(count) + image_file_object.name, "wb") as fp:
-                     fp.write(image_file_object.data)
-                     count += 1
-
+         
             if '/Font' in page_data['/Resources']:
                 st.success("This is digital PDF with below tags")
                 st.text(page_data['/Resources'].keys())
