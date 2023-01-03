@@ -7,8 +7,8 @@ st.title("PDF unlocker")
 def main():
      
      option_op=st.selectbox(
-                             'Working with PDF',
-                            ('Unlock PDF','Merge PDF')
+                'Working with PDFs',
+                ('Unlock PDF','Merge PDF')
      )                   
 
      if option_op == 'Unlock PDF':
@@ -27,11 +27,11 @@ def main():
 
 
        
-       with open(uploaded_file_data.name,'rb') as f:
-            PDFbyte=f.read()
-            st.download_button(label="Download",
-            data=PDFbyte,
-            file_name=uploaded_file_data.name)
+           with open(uploaded_file_data.name,'rb') as f:
+              PDFbyte=f.read()
+              st.download_button(label="Download",
+              data=PDFbyte,
+              file_name=uploaded_file_data.name)
 
 
 
@@ -41,6 +41,7 @@ def main():
 
 
 
+     
   if __name__=='__main__' :
       main()
 
