@@ -46,7 +46,7 @@ def main():
         merge=st.button("Merge")
           
         if merge:
-           merger=PdfFileMerger()
+           merger=PdfWriter()
            for pdf in uploaded_files:
                merger.append(pdf)
                merger.write("result.pdf")
