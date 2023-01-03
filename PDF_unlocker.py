@@ -6,17 +6,17 @@ st.title("PDF unlocker")
 
 def main():
      
-      option_op=st.selectbox(
+     option_op=st.selectbox(
                              'Working with PDF',
                             ('Unlock PDF','Merge PDF')
       )                   
 
-    if option_op == 'Unlock PDF':
-        st.write("Unlock PDF")
-        uploaded_files = st.file_uploader('Choose a PDF file', accept_multiple_files=True)
-         for uploaded_file_data in uploaded_files:
-             bytes_data=uploaded_file_data.read()
-             st.write('filename:',uploaded_file_data.name)
+ if option_op == 'Unlock PDF':
+    st.write("Unlock PDF")
+    uploaded_files = st.file_uploader('Choose a PDF file', accept_multiple_files=True)
+      for uploaded_file_data in uploaded_files:
+          bytes_data=uploaded_file_data.read()
+          st.write('filename:',uploaded_file_data.name)
 
 
     pdf_password=st.text_input("PDF password")
