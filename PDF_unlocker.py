@@ -50,6 +50,12 @@ def main():
            for pdf in uploaded_files:
                merger.append(pdf)
                merger.write("result.pdf")
+           with open('result.pdf','rb') as f:
+              PDFbyte=f.read()
+              st.download_button(label="Download",
+              data=PDFbyte,
+              file_name=uploaded_file_data.name)
+
 
 
 
