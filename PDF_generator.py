@@ -6,7 +6,7 @@ import streamlit.components.v1 as components
 
 
 report_text = st.text_area("Report Text")
-components.html(""" <div style="text-align: center"> your-text-here </div> """ )
+components.html(""" <div style="text-align: center"> report_text </div> """ )
 
 
 export_as_pdf = st.button("Export Report")
