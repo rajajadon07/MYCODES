@@ -42,9 +42,9 @@ def run():
             directory = r'.\Scanned_UnScanned\temp '+ pdf_file.name
             st.text(directory)
 
-            pdfFileObj = open(pdf_file.name, 'rb')
+            pdfFileObj = open(pdf_file.name, 'rb') 
             pdf_Reader = PdfReader(pdfFileObj)
-            page_data = pdf_Reader.pages[1]
+            page_data = pdf_Reader.pages[0]
 
             if '/Font' in page_data['/Resources']:
                 st.success("This is digital PDF with below tags")
