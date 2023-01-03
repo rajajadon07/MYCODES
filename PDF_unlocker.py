@@ -11,7 +11,7 @@ def main():
                             ('Unlock PDF','Merge PDF')
       )                   
 
-     if option_op == 'Unlock PDF':
+    if option_op == 'Unlock PDF':
         st.write("Unlock PDF")
         uploaded_files = st.file_uploader('Choose a PDF file', accept_multiple_files=True)
          for uploaded_file_data in uploaded_files:
