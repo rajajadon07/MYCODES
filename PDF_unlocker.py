@@ -21,7 +21,7 @@ def main():
           pdf_password=st.text_input("PDF password")
        unlock=st.button("Unlock PDF")
        if unlock:
-           pdf=pikepdf.open(uploaded_file_data,password=pdf_passsword)
+           pdf=pikepdf.open(uploaded_file_data,password=pdf_password)
            pdf.save(uploaded_file_data.name)
            st.write("File is Successfully unlocked")
 
