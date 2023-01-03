@@ -39,10 +39,10 @@ def run():
         if pdf_file is not None:
             save_image_path = './Scanned_UnScanned'+ pdf_file.name
             
-            directory = r'.Documents\Scanned_UnScanned\temp'
+            directory = r'C:\Users\rjadon\Documents\Scanned_UnScanned\temp\sample.pdf'
             st.text(directory)
             
-            pdf_name=pdf_file.name
+            pdf_name = pdf_file.name
             pdfFileObj = open(pdf_name, 'rb') 
             pdf_Reader = PdfReader(pdfFileObj)
             page_data = pdf_Reader.pages[0]
