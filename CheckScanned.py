@@ -4,7 +4,7 @@ import base64,random
 import time,datetime
 import pdfplumber
 import PyPDF2
-from PyPDF2 import PdfFileWriter, PdfFileReader
+from PyPDF2 import PdfFileWriter, PdfReader
 import io,random
 from streamlit_tags import st_tags
 from PIL import Image
@@ -43,7 +43,7 @@ def run():
             st.text(directory)
 
             pdfFileObj = open(pdf_file.name, 'rb')
-            pdf_Reader = PyPDF2.PdfFileReader(pdfFileObj)
+            pdf_Reader = PyPDF2.PdfReader(pdfFileObj)
             page_data = pdf_Reader.getPage(0)
 
             if '/Font' in page_data['/Resources']:
