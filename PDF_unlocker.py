@@ -7,7 +7,7 @@ st.title("PDF unlocker")
 def main():
      
      option=st.selectbox('working with PDF',
-                          ('Unlock PDF','Merge PDF')
+                          'Unlock PDF','Merge PDF')
 )
 if option == 'Unlock PDF':
   st.write("Unlock PDF")
