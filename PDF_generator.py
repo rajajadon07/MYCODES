@@ -24,4 +24,4 @@ if export_as_pdf:
     html = create_download_link(pdf.output(dest="S").encode("latin-1"), "test")
    
 
-    st.markdown(html,,html1, unsafe_allow_html=True)
+    st.markdown(html, unsafe_allow_html=True)
