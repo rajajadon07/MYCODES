@@ -5,7 +5,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 
-report_text = st.text_area( label='Enter your text Here',value='', height=100, max_chars=10000, key=None)
+report_text = st.text_area( label='Enter your text Here',value='', height=3000, max_chars=10000, key=None)
 
 
 
