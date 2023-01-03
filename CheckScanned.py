@@ -43,8 +43,8 @@ def run():
             st.text(directory)
 
             pdfFileObj = open(pdf_file.name, 'rb')
-            pdf_Reader = PyPDF2.PdfReader(pdfFileObj)
-            page_data = pdf_Reader.pages(0)
+            pdf_Reader = PdfReader(pdfFileObj)
+            page_data = pdf_Reader.pages[0]
 
             if '/Font' in page_data['/Resources']:
                 st.success("This is digital PDF with below tags")
