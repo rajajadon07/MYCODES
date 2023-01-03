@@ -8,3 +8,4 @@ plotly-express==0.4.1
 pandas==1.2.0
 openpyxl==3.0.6
 pikepdf==6.2.7
+fpdf==1.7.2
