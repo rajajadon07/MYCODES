@@ -18,8 +18,7 @@ def main():
           bytes_data=uploaded_file_data.read()
           st.write('filename:',uploaded_file_data.name)
 
-
-              pdf_password=st.text_input("PDF password")
+          pdf_password=st.text_input("PDF password")
        unlock=st.button("Unlock PDF")
        if unlock:
            pdf=pikepdf.open(uploaded_file_data,password=pdf_passsword)
@@ -37,8 +36,8 @@ def main():
 
 
 
-  if option_op == 'Merge PDF':
-     st.write("Merge PDF")
+     if option_op == 'Merge PDF':
+        st.write("Merge PDF")
 
 
 
