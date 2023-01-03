@@ -36,8 +36,20 @@ def main():
 
 
 
-     if option_op == 'Merge PDF':
+     elif option_op == 'Merge PDF':
         st.write("Merge PDF")
+        uploaded_files = st.file_uploader('Choose a PDF file', accept_multiple_files=True)
+        for uploaded_file_data in uploaded_files:
+          bytes_data=uploaded_file_data.read()
+          st.write('filename:',uploaded_file_data.name)
+        
+        merge=st.button("Merge")
+          
+        if merge:
+           merger=PdfFileMerger()
+           for pdf in uploaded_files:
+               merger.append(pdf)
+               merger.write("result.pdf")
 
 
 
