@@ -48,9 +48,9 @@ def run():
             count=0
             
             for image_file_object in page.images:
-            with open(str(count) + image_file_object.name, "wb") as fp:
-            fp.write(image_file_object.data)
-            count += 1
+               with open(str(count) + image_file_object.name, "wb") as fp:
+                fp.write(image_file_object.data)
+                count += 1
 
             if '/Font' in page_data['/Resources']:
                 st.success("This is digital PDF with below tags")
