@@ -8,7 +8,7 @@ def main():
      
      option=st.selectbox('working with PDF',
                           'Unlock PDF','Merge PDF')
-)
+
 if option == 'Unlock PDF':
   st.write("Unlock PDF")
   uploaded_files = st.file_uploader('Choose a PDF file', accept_multiple_files=True)
