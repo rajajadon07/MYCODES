@@ -36,7 +36,7 @@ if option == 'Unlock PDF':
 
 
 if option == 'Merge PDF':
-st.write("Merge PDF")
+  st.write("Merge PDF")
 
 
 
