@@ -18,8 +18,8 @@ def create_download_link(val, filename):
 if export_as_pdf:
     pdf = FPDF()
     pdf.add_page()
-    pdf.set_font('Arial', 'B', 16)
-    pdf.cell(40, 10, report_text)
+    pdf.set_font('Arial', 'B', 11)
+    pdf.cell(20, 10, report_text)
     
     html = create_download_link(pdf.output(dest="S").encode("latin-1"), "test")
    
