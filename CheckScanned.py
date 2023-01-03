@@ -39,7 +39,7 @@ def run():
         if pdf_file is not None:
             save_image_path = './Scanned_UnScanned'+ pdf_file.name
             
-            directory = r'C:\Users\rjadon\Documents\Scanned_UnScanned\temp\sample.pdf'
+            directory = r'C:\Users\rjadon\Documents\Scanned_UnScanned\temp\sample3.pdf'
             st.text(directory)
             
             pdf_name = pdf_file.name
