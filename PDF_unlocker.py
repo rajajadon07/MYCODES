@@ -7,7 +7,7 @@ st.title("PDF Unlocker // Merger")
 def main():
      
      option_op=st.selectbox(
-                'Working with PDFs'U
+                'Working with PDFs'
                 ('Unlock PDF','Merge PDF')
      )                   
 
