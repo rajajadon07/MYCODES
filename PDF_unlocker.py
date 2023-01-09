@@ -2,12 +2,12 @@ import pikepdf
 import streamlit as st
 from PyPDF2 import PdfWriter
 
-st.title("PDF unlocker")
+st.title("PDF Unlocker // Merger")
 
 def main():
      
      option_op=st.selectbox(
-                'Working with PDFs',
+                'Working with PDFs'U
                 ('Unlock PDF','Merge PDF')
      )                   
 
