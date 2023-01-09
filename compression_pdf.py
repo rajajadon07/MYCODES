@@ -1,12 +1,16 @@
+import pikepdf
+import streamlit as st
+
 from PyPDF2 import PdfReader, PdfWriter
 
-uploaderpdf=st.file_uploader('Choose your pdf',accept_multiple_files=True)
-reader = PdfReader(uploaderpdf)
+uploader_pdf=st.file_uploader('Choose your pdf',accept_multiple_files=True)
+st.write(uploader_pdf)
+reader = PdfReader(uploader_pdf)
 writer = PdfWriter()
 
 for page in reader.pages:
     page.compress_content_streams() 
     writer.add_page(page)
 
-with open(uploaderpdf, "wb") as f:
+with open(uploader_pdf, "wb") as f:
     writer.write(f)
