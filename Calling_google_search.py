@@ -11,6 +11,6 @@ if option == 1:
 elif option==2:
     for i in search(query,tld='co.in',lang='en',num=2,stop=2,pause=2):
          st.write(i)
-else option==3:
+elif option==3:
     for i in search(query, tld='co.in'lang='en',num=3,stop=3,pause=2):
       st.write(i)
