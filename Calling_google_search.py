@@ -13,4 +13,5 @@ elif option==2:
          st.write(i)
 elif option==3:
     for i in search(query, tld='co.in',lang='en',num=3,stop=3,pause=2):
-      st.write(i)
+         st.write(i)
+  
