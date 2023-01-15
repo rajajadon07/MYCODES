@@ -6,7 +6,7 @@ query = find
 option=st.selectbox('Select days your want search result for',
                          ('1','2','3'))
 
-for i in search(query,tld='co.in',lang='en',num=option,stop=1,pause=2):
+for i in search(query,tld='co.in',lang='en',num=option,stop=option,pause=2):
         st.write(i)
 
   
