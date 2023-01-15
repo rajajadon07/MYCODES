@@ -3,10 +3,8 @@ from googlesearch import search
 
 find=st.text_input("Enter your text here")
 query = find
-for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=3):
-   top_results=st.number_input('Top results , format='%i')
-   if i>=top_results:
-      st.write(i)
+for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=4):
+     st.write(i)
    
    
    
