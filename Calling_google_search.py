@@ -17,7 +17,7 @@ elif option > 1 and option < 3:
 elif option > 1 and option > 2:
     for i in search(query,tld='co.in',lang='en',num=3,stop=3,pause=2):
         st.write(i)
-        text_results=st.text_input(i)
+        text_results=st.text_area(i)
 
 
   
