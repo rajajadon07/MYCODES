@@ -6,7 +6,7 @@ query = find
 for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
    st.write(i)
    
-option=st.number_input('Insert the number of days', format='%i')
+option=st.number_input('Top results', format='%i')
 
 if option <2 and option < 3:
     for i in search(query,tld='co.in',lang='en',num=1,stop=1,pause=2):
