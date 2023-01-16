@@ -12,14 +12,12 @@ for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
 
 option=st.number_input('Top results', format='%i')
 col1,col2,col3=st.columns(3)
-temp=2
-count=1
+
 if option <2 and option < 3:
    for i in search(query,tld='co.in',lang='en',num=1,stop=1,pause=2):
-    result1=st.write(i)
-    if count<temp:
-      col1.header("Top result 1")
-      count=count+1
+     result1=st.write(i)
+     col1.header("Top result 1")
+    
     
       
 temp=3
