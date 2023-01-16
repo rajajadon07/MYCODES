@@ -20,11 +20,11 @@ if option <2 and option < 3:
 elif option > 1 and option < 3:
     for i in search(query,tld='co.in',lang='en',num=2,stop=2,pause=2):
         result2=st.write(i)
-     col2.header("Top result 2")
+        col2.header("Top result 2")
 elif option > 1 and option > 2:
     for i in search(query,tld='co.in',lang='en',num=3,stop=3,pause=2):
         result3=st.write(i)
-     col3.header("Top result 3")
+        col3.header("Top result 3")
         
 
 
