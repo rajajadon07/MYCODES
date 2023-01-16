@@ -1,5 +1,6 @@
 import streamlit as st
 from googlesearch import search
+import requests
 
 find=st.text_input("Enter your text here")
 query = find
