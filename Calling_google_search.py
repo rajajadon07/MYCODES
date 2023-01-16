@@ -6,7 +6,7 @@ import requests
 
 query=st.text_input("Enter your text here")
 
-for i in search(query,tld='cnn',lang='en',num=5,stop=5,pause=2):
+for i in search(query,tld='.com',lang='en',num=5,stop=5,pause=2):
      req=requests.get(i)
      soup = BeautifulSoup(req.text, 'html.parser')
      st.write("Title of this website: " )
