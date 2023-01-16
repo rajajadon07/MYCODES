@@ -5,7 +5,7 @@ import requests
 find=st.text_input("Enter your text here")
 query = find
 
-for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
+for i in search.results(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
      Title=i.title
      Title_text=i.getText()
      st.write("Title: ",Title,Title_text)
