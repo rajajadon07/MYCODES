@@ -29,8 +29,8 @@ elif option > 1 and option < 3:
           count=count+1
 elif option > 1 and option > 2:
        for i in search(query,tld='co.in',lang='en',num=3,stop=3,pause=2):
-       result3=st.write(i)
-       col3.header("Top result 3")
+         result3=st.write(i)
+         col3.header("Top result 3")
         
 
 
