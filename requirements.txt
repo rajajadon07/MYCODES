@@ -11,3 +11,10 @@ pikepdf==6.2.7
 fpdf==1.7.2
 google==3.0.0
 requests==v2.28.2
+beautifulsoup4
+selenium>=2.44.0,<3.0.0
+requests
+unidecode
+vcrpy
+future
+fake-useragent
