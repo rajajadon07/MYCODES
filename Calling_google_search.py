@@ -11,6 +11,7 @@ for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
      soup = BeautifulSoup(req.text, 'html.parser')
      st.write("Title of this website: " )
      for title in soup.find_all('title',limit=1)
+       [<title>Risk and threat </title>]
           st.write(title.get_text())
           st.write(i)
          
