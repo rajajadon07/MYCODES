@@ -8,10 +8,10 @@ find=st.text_input("Enter your text here")
 query=find
 
 for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
-     st.write("Title of this website": )
      req=requests.get(i)
      soup = BeautifulSoup(req.text, 'html.parser')
      st.write(i)
+      st.write("Title of this website:" )
      for title in soup.find_all('title'):
           st.write(title.get_text())
    
