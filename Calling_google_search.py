@@ -3,13 +3,14 @@ from googlesearch import search
 import requests
 
 find=st.text_input("Enter your text here")
-query = find
 
-for i in search.results(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
-     Title=i.title
-     Title_text=i.getText()
+
+response = GoogleSearch().search(find)
+for results in reponse.results:
+     Title=result.title
+     Title_text=result.getText()
      st.write("Title: ",Title,Title_text)
-     st.write(i)
+     st.write(result)
    
    
    
