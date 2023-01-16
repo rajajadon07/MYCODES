@@ -23,7 +23,7 @@ elif option > 1 and option < 3:
       temp=3
       count=2
       for i in search(query,tld='co.in',lang='en',num=2,stop=2,pause=2):
-      result2=st.write(i)
+        result2=st.write(i)
         if count<temp:
           col2.header("Top result 2")
           count=count+1
