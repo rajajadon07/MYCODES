@@ -21,6 +21,7 @@ if option <2 and option < 3:
       col1.header("Top result 1")
       count=count+1
     
+      
 temp=3
 count=2
 elif option > 1 and option < 3:
