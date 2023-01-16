@@ -3,9 +3,9 @@ from googlesearch import search
 
 find=st.text_input("Enter your text here")
 query = find
-with st.container():
+
   for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
-     st.write(i)
+    st.tabs([st.write(i)])
    
    
    
