@@ -1,17 +1,13 @@
 import streamlit as st
-from googlesearch.googlesearch import GoogleSearch
+from googlesearch import search
+
 import requests
 
 find=st.text_input("Enter your text here")
+query=find
 
-
-response = GoogleSearch().search("corona")
-for result in response.results:
-     Title=result.title
-     Title_text=result.getText()
-     st.write(Title,Title_text)
-     st.write(result)
-   
+for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
+     st.write(i)
    
    
 
