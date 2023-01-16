@@ -6,7 +6,7 @@ find=st.text_input("Enter your text here")
 
 
 response = GoogleSearch().search(find)
-for results in reponse.results:
+for results in response.results:
      Title=result.title
      Title_text=result.getText()
      st.write("Title: ",Title,Title_text)
