@@ -5,7 +5,7 @@ import requests
 find=st.text_input("Enter your text here")
 
 
-response = GoogleSearch().search(raja)
+response = GoogleSearch().search("corona")
 for result in response.results:
      Title=result.title
      Title_text=result.getText()
