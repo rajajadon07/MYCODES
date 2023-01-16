@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 import requests
 
-query=st.text_input("Enter your text here",'Risk','Riots')
+query=st.text_input("Enter your text here")
 
 for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
      req=requests.get(i)
