@@ -4,7 +4,7 @@ from googlesearch import search
 find=st.text_input("Enter your text here")
 query = find
 
-  for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
+for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
     st.tabs([st.write(i)])
    
    
