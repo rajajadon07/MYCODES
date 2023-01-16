@@ -7,7 +7,8 @@ query = find
 
 for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
      Title=i.title
-     st.write("Title: ",Title)
+     Title_text=i.getText()
+     st.write("Title: ",Title,Title_text)
      st.write(i)
    
    
