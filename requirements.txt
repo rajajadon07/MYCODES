@@ -19,3 +19,4 @@ vcrpy
 future
 fake-useragent
 google-search==1.1.1
+beautifulsoup4==4.11.1
