@@ -32,9 +32,9 @@ elif option > 1 and option > 2:
        count=3
        for i in search(query,tld='co.in',lang='en',num=3,stop=3,pause=2):
          result3=st.write(i)
-         if count<temp:
-         col3.header("Top result 3")
-         count=count+1
+           if count<temp:
+            col3.header("Top result 3")
+            count=count+1
         
 
 
