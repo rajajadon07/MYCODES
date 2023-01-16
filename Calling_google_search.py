@@ -6,7 +6,8 @@ find=st.text_input("Enter your text here")
 query = find
 
 for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
-     st.write("Title: "+ i.title)
+     Title=i.title
+     st.write("Title: ",Title)
      st.write(i)
    
    
