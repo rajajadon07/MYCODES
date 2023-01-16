@@ -17,7 +17,7 @@ if option <2 and option < 3:
    for i in search(query,tld='co.in',lang='en',num=1,stop=1,pause=2):
     result1=st.write(i)
     if i<temp:
-    col1.header("Top result 1")
+      col1.header("Top result 1")
     
        
 elif option > 1 and option < 3:
