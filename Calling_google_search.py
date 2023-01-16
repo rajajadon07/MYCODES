@@ -10,8 +10,7 @@ for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
      req=requests.get(i)
      soup = BeautifulSoup(req.text, 'html.parser')
      st.write("Title of this website: " )
-     for title in soup.find_all(string=["Title", "Risk", "risk","Threats","danger","recent","cnn","bloomberg","bbc"])
-
+     for title in soup.find_all("title")
           st.write(title.get_text())
           st.write(i)
          
