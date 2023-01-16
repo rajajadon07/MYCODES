@@ -18,3 +18,4 @@ unidecode
 vcrpy
 future
 fake-useragent
+google-search==1.1.1
