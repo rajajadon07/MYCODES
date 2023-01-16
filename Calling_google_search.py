@@ -1,5 +1,6 @@
 import streamlit as st
 from googlesearch import search
+from bs4 import BeautifulSoup
 
 import requests
 
@@ -7,7 +8,11 @@ find=st.text_input("Enter your text here")
 query=find
 
 for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
+     req=requests.get(i)
+     soup = BeautifulSoup(reqs.text, 'html.parser')
      st.write(i)
+     for title in soup.find_all('title'):
+          st.write(title.get_text())
    
    
 
