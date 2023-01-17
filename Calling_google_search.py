@@ -3,7 +3,8 @@ from googlesearch import search
 from bs4 import BeautifulSoup
 
 import requests
-title=st_title("Reports in risk and threats :"+country_dropdown)
+title=st_title("Reports in risk and threats :")
+st.write=title
 query=st.text_input("Please enter your query here")
 country_dropdown=st.selectbox('Please select your cocern country',
                                ('India','France','Germany','Italy','Usa','China','Japan'))
