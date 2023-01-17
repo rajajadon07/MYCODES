@@ -30,7 +30,7 @@ elif choice=="CHINA":
          
 elif choice=="RUSSIA":
     query=st.text_input("Please enter your query here")
-    for i in search(query,tld='.ru',country='RUSSIA',lang='en',num=5,stop=5,pause=2):
+    for i in search(query,tld='ru',country='RUSSIA',lang='en',num=5,stop=5,pause=2):
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
@@ -41,7 +41,7 @@ elif choice=="RUSSIA":
 elif choice=="BRAZIL":
     result="BRAZIL"
     query=st.text_input("Please enter your query here")
-    for i in search(query,tld='.br',country='BRAZIL' ,lang='en',num=5,stop=5,pause=2):
+    for i in search(query,tld='br',country='BRAZIL' ,lang='en',num=5,stop=5,pause=2):
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
@@ -62,7 +62,7 @@ elif choice=="FRANCE":
          
 elif choice=="GERMANY":
     query=st.text_input("Please enter your query here")
-    for i in search(query,tld='.de',country='GERMANY' ,lang='en',num=5,stop=5,pause=2):
+    for i in search(query,tld='de',country='GERMANY' ,lang='en',num=5,stop=5,pause=2):
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
