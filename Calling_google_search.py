@@ -47,12 +47,12 @@ elif option > 1 and option < 3:
       for i in search(query,tld='co.in',lang='en',num=2,stop=2,pause=2):
          temp=1
          count=0
-         result2=st.write(i)
-         while count<temp:
-           col2.header("Top result 2")
-           for title in soup.find_all('title',limit=1):
+         col2.header("Top result 2")
+         if count<temp:
+            result2=st.write(i)
+            for title in soup.find_all('title',limit=1):
              st.write(title.get_text())
-           count=count+1
+            count=+1
               
 elif option > 1 and option > 2:
      for i in search(query,tld='co.in',lang='en',num=3,stop=3,pause=2):
@@ -63,7 +63,7 @@ elif option > 1 and option > 2:
            result3=st.write(i)
            for title in soup.find_all('title',limit=1):
               st.write(title.get_text())
-           count=count+1
+           count=+1
           
              
 
