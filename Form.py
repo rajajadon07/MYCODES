@@ -3,6 +3,7 @@ with st.form(key='my_form', clear_on_submit=True):
   title_SOP=st.title('SOP Questions form')
   def myFun(*argv):
     for arg in argv:
+      st.write(arg)
   myFun('What is Living allowance ?', 'What is Supplier invoice ?')
   
   input_question=st.input_text()
