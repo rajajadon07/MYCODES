@@ -3,7 +3,7 @@ from googlesearch import search
 from bs4 import BeautifulSoup
 
 import requests
-
+HEADING=st.title("Critical information nearby me")
 menu=["USA","CHINA","RUSSIA","BRAZIL","FRANCE","GERMANY","JAPAN"]
 choice=st.sidebar.selectbox("Country Selection",menu)
 if choice=="USA":
