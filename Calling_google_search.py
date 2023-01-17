@@ -15,7 +15,7 @@ if choice=="USA":
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
-       for title in soup.find_all('title',limit=1):
+          for title in soup.find_all('title',limit=1):
             st.write(title.get_text())
             st.write(i)
          
@@ -26,7 +26,7 @@ if choice=="USA":
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
-        for title in soup.find_all('title',limit=1):
+          for title in soup.find_all('title',limit=1):
             st.write(title.get_text())
             st.write(i)
          
@@ -37,7 +37,7 @@ if choice=="USA":
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
-        for title in soup.find_all('title',limit=1):
+          for title in soup.find_all('title',limit=1):
             st.write(title.get_text())
             st.write(i)
          
@@ -48,7 +48,7 @@ if choice=="USA":
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
-        for title in soup.find_all('title',limit=1):
+          for title in soup.find_all('title',limit=1):
             st.write(title.get_text())
             st.write(i)
          
@@ -59,7 +59,7 @@ if choice=="USA":
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
-       for title in soup.find_all('title',limit=1):
+          for title in soup.find_all('title',limit=1):
             st.write(title.get_text())
             st.write(i)
          
@@ -70,7 +70,7 @@ if choice=="USA":
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
-        for title in soup.find_all('title',limit=1):
+          for title in soup.find_all('title',limit=1):
            st.write(title.get_text())
            st.write(i)
          
@@ -81,7 +81,7 @@ elif choice=="JAPAN":
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
-        for title in soup.find_all('title',limit=1):
+          for title in soup.find_all('title',limit=1):
            st.write(title.get_text())
            st.write(i)
          
