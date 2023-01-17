@@ -1,20 +1,8 @@
 with st.form(key='my_form'):
-        Question_enter=st.write('question1')
-	text_input = st.text_input(label='Enter some text')
-
-        Question_enter=st.write('question1')
-	text_input = st.text_input(label='Enter some text')
-         
+  temp=15
+  while temp>0
+    Question_enter=st.write('question1')
+    text_input = st.text_input(label='Enter some text',key=temp)
+    temp=temp-1
     
-        Question_enter=st.write('question1')
-	text_input = st.text_input(label='Enter some text')
- 
- 
-        Question_enter=st.write('question1')
-	text_input = st.text_input(label='Enter some text')
-
-
-        Question_enter=st.write('question1')
-	text_input = st.text_input(label='Enter some text')
-         
-	submit_button = st.form_submit_button(label='Submit')
+  submit_button = st.form_submit_button(label='Submit')
