@@ -4,11 +4,13 @@ from bs4 import BeautifulSoup
 
 import requests
 HEADING=st.title("Critical information nearby me")
+
 menu=["USA","CHINA","RUSSIA","BRAZIL","FRANCE","GERMANY","JAPAN"]
 choice=st.sidebar.selectbox("Country Selection",menu)
+
 if choice=="USA":
    st.subheader("results for usa")
-   country='USA'
+   
 
 query=st.text_input("Please enter your query here")
 
