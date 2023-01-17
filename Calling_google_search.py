@@ -7,7 +7,7 @@ import requests
 menu=["USA","CHINA","RUSSIA","BRAZIL","FRANCE","GERMANY","JAPAN"]
 choice=st.sidebar.selectbox("Country Selection",menu)
 if choice=="USA":
-   st.subheader="results for usa"
+   st.subheader("results for usa")
    country='USA'
 
 query=st.text_input("Please enter your query here")
