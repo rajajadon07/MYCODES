@@ -7,7 +7,7 @@ with st.form(key='my_form', clear_on_submit=True):
   myFun('What is Living allowance ?', 'What is Supplier invoice ?')
   
   input_question=st.input_text()
-  if arg==What is Living allowance ?:
+  if arg=='What is Living allowance ?':
      input_question='What is Living allowance ?'
      answer=st.input_text('It is the file received from the payroll department, which describes the allowances that had been incurred by the employee/Expat during the secondment period. Below mentioned screenshot is for your reference')
   else:
