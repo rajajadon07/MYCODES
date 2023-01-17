@@ -20,7 +20,7 @@ if choice=="USA":
          
 elif choice=="CHINA":
     query=st.text_input("Please enter your query here")
-    for i in search(query,tld='cn',country='CHINA' ,lang='en',num=5,stop=5,pause=2, extra_params={'filter':'o'}):
+    for i in search(query,tld='cn',country='CHINA' ,lang='en',num=5,stop=5,pause=2, extra_params={'filter':'risk'}):
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
