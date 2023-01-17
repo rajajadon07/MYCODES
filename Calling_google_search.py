@@ -9,9 +9,9 @@ country_dropdown=st.selectbox('Please select your cocern country',
                                ('India','France','Germany','Italy','Usa','China','Japan'))
 string_result=country_dropdown
 for i in string_result:
-  country=i
+  country_re=i
 
-for i in search(query,tld='com',country='',lang='en',num=5,stop=5,pause=2):
+for i in search(query,tld='com',country='country_re',lang='en',num=5,stop=5,pause=2):
      req=requests.get(i)
      soup = BeautifulSoup(req.text, 'html.parser')
      st.write("Title of this website: " )
