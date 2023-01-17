@@ -3,6 +3,9 @@ from googlesearch import search
 from bs4 import BeautifulSoup
 
 import requests
+st.title("Select your Region/Country")
+menu=["USA","CHINA","RUSSIA","BRAZIL","FRANCE","GERMANY","JAPAN"]
+choice=st.sidebar.selectbox("Menu",menu)
 
 query=st.text_input("Please enter your query here")
 dropdown=st.selectbox('Please select your cocern country',
