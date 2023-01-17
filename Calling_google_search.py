@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import requests
 
 st.title("Critical information nearby me")
-menu=["USA","CHINA","RUSSIA","BRAZIL","FRANCE","GERMANY","INDIA"]
+menu=["USA","CHINA"]
 choice=st.sidebar.selectbox("Country Selection",menu)
 
 
