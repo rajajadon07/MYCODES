@@ -5,10 +5,10 @@ from bs4 import BeautifulSoup
 import requests
 
 query=st.text_input("Please enter your query here")
-country_dropdown=st.selectbox('Please select your cocenrn country',
+country_dropdown=st.selectbox('Please select your cocern country',
                                ('India','France','Germany','Italy','Usa','China','Japan'))
 
-for i in search(query,tld='com',country='China',lang='en',num=5,stop=5,pause=2):
+for i in search(query,tld='com',country='',lang='en',num=5,stop=5,pause=2):
      req=requests.get(i)
      soup = BeautifulSoup(req.text, 'html.parser')
      st.write("Title of this website: " )
