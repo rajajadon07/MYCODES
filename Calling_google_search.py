@@ -3,14 +3,15 @@ from googlesearch import search
 from bs4 import BeautifulSoup
 
 import requests
-HEADING=st.title("Critical information nearby me")
 
+st.title("Critical information nearby me")
 menu=["USA","CHINA","RUSSIA","BRAZIL","FRANCE","GERMANY","JAPAN"]
 choice=st.sidebar.selectbox("Country Selection",menu)
 
 if choice=="USA":
-   subhead=st.subheader("results for usa")
-   st.write(subhead)
+    st.subheader("Results for usa")
+    st.subheader("Home")
+   
    
 
 query=st.text_input("Please enter your query here")
