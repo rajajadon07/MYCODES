@@ -3,13 +3,15 @@ from googlesearch import search
 from bs4 import BeautifulSoup
 
 import requests
-st.title("Select your Region/Country")
+
 menu=["USA","CHINA","RUSSIA","BRAZIL","FRANCE","GERMANY","JAPAN"]
-choice=st.sidebar.selectbox("Menu",menu)
+choice=st.sidebar.selectbox("Country Selection",menu)
+if choice=="USA":
+   st.subheader="results for usa"
+   country='USA'
 
 query=st.text_input("Please enter your query here")
-dropdown=st.selectbox('Please select your cocern country',
-                               ('India','France','Germany','Italy','Usa','China','Japan'))
+
 
 for i in search(query,tld='com',country='India' ,lang='en',num=5,stop=5,pause=2):
      req=requests.get(i)
