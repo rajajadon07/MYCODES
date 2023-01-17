@@ -4,13 +4,14 @@ with st.form(key='my_form', clear_on_submit=True):
   def myFun(*argv):
     for arg in argv:
       st.write(arg)
+      input_question=st.text_input(label='enter your question here')
   myFun('What is Living allowance ?', 'What is Supplier invoice ?')
   
-input_question=st.text_input(label='enter your question here')
-     if arg=='What is Living allowance ?':
+
+       if arg=='What is Living allowance ?':
         input_question='What is Living allowance ?'
         answer=st.text_input('It is the file received from the payroll department, which describes the allowances that had been incurred by the employee/Expat during the secondment period. Below mentioned screenshot is for your reference')
-     else:
+       else:
         input_question='What is Supplier invoice ?'
         answer='These are the invoices which are booked by the AP for payment and data has been used for calculation of the amount to be charged'
 
