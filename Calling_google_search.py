@@ -59,7 +59,7 @@ elif option > 1 and option > 2:
         temp=2
         count=0
         col3.header("Top result 3")
-        while count<temp:
+        if count<temp:
            result3=st.write(i)
            for title in soup.find_all('title',limit=1):
               st.write(title.get_text())
