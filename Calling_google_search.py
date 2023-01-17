@@ -9,9 +9,8 @@ menu=["USA","CHINA","RUSSIA","BRAZIL","FRANCE","GERMANY","JAPAN"]
 choice=st.sidebar.selectbox("Country Selection",menu)
 
 if choice=="USA":
-    result="USA"
     query=st.text_input("Please enter your query here")
-    for i in search(query,tld='co.in',country='result' ,lang='en',num=5,stop=5,pause=2):
+    for i in search(query,tld='com',country='USA' ,lang='en',num=5,stop=5,pause=2):
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
@@ -20,9 +19,8 @@ if choice=="USA":
             st.write(i)
          
 elif choice=="CHINA":
-    result="CHINA"
     query=st.text_input("Please enter your query here")
-    for i in search(query,tld='co.in',country=result ,lang='en',num=5,stop=5,pause=2):
+    for i in search(query,tld='com',country='CHINA' ,lang='en',num=5,stop=5,pause=2):
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
@@ -31,9 +29,8 @@ elif choice=="CHINA":
             st.write(i)
          
 elif choice=="RUSSIA":
-    result="RUSSIA"
     query=st.text_input("Please enter your query here")
-    for i in search(query,tld='co.in',country=result ,lang='en',num=5,stop=5,pause=2):
+    for i in search(query,tld='com',country='RUSSIA',lang='en',num=5,stop=5,pause=2):
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
@@ -44,7 +41,7 @@ elif choice=="RUSSIA":
 elif choice=="BRAZIL":
     result="BRAZIL"
     query=st.text_input("Please enter your query here")
-    for i in search(query,tld='co.in',country=result ,lang='en',num=5,stop=5,pause=2):
+    for i in search(query,tld='com',country='BRAZIL' ,lang='en',num=5,stop=5,pause=2):
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
@@ -55,7 +52,7 @@ elif choice=="BRAZIL":
 elif choice=="FRANCE":
     result="FRANCE"
     query=st.text_input("Please enter your query here")
-    for i in search(query,tld='co.in',country=result ,lang='en',num=5,stop=5,pause=2):
+    for i in search(query,tld='com',country='FRANCE',lang='en',num=5,stop=5,pause=2):
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
@@ -64,9 +61,8 @@ elif choice=="FRANCE":
             st.write(i)
          
 elif choice=="GERMANY":
-    result="GERMANY"
     query=st.text_input("Please enter your query here")
-    for i in search(query,tld='co.in',country=result ,lang='en',num=5,stop=5,pause=2):
+    for i in search(query,tld='com',country='GERMANY' ,lang='en',num=5,stop=5,pause=2):
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
@@ -75,9 +71,8 @@ elif choice=="GERMANY":
            st.write(i)
          
 elif choice=="JAPAN":
-    result="JAPAN"
     query=st.text_input("Please enter your query here")
-    for i in search(query,tld='co.in',country=result ,lang='en',num=5,stop=5,pause=2):
+    for i in search(query,tld='co.in',country='JAPAN' ,lang='en',num=5,stop=5,pause=2):
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
