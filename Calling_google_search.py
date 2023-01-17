@@ -9,8 +9,8 @@ menu=["USA","CHINA","RUSSIA","BRAZIL","FRANCE","GERMANY","JAPAN"]
 choice=st.sidebar.selectbox("Country Selection",menu)
 
 if choice=="USA":
-    st.subheader("Results for usa")
-    st.subheader("Home")
+    st.subheader("USA")
+   
    
    
 
