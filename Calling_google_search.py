@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 import requests
 title_head=st.title("Reports in risk and threats :")
-st.write=title
+st.write=title_head
 query=st.text_input("Please enter your query here")
 country_dropdown=st.selectbox('Please select your cocern country',
                                ('India','France','Germany','Italy','Usa','China','Japan'))
