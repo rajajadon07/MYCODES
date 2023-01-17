@@ -45,8 +45,8 @@ if option <2 and option < 3:
 
 elif option > 1 and option < 3:
       for i in search(query,tld='co.in',lang='en',num=2,stop=2,pause=2):
-         temp=3
-         count=1
+         temp=1
+         count=0
          result2=st.write(i)
          while count<temp:
            col2.header("Top result 2")
@@ -56,8 +56,8 @@ elif option > 1 and option < 3:
               
 elif option > 1 and option > 2:
      for i in search(query,tld='co.in',lang='en',num=3,stop=3,pause=2):
-        temp=4
-        count=1
+        temp=2
+        count=0
         result3=st.write(i)
         while count<temp:
           col3.header("Top result 3")
