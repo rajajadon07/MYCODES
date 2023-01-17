@@ -3,7 +3,7 @@ form=st.form(key='form')
 temp=15
 while temp>0:
   Question_enter=form.write('question')
-  text_input = form.text_area(label='some text')
+  text_input = form.text_area(label='some text' key='answer')
   temp=temp-1
        
         
