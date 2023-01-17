@@ -9,7 +9,7 @@ menu=["USA","CHINA","RUSSIA","BRAZIL","FRANCE","GERMANY","JAPAN"]
 choice=st.sidebar.selectbox("Country Selection",menu)
 
 if choice=="USA":
-    st.subheader("USA")
+    result="USA"
    
    
    
@@ -17,7 +17,7 @@ if choice=="USA":
 query=st.text_input("Please enter your query here")
 
 
-for i in search(query,tld='com',country='India' ,lang='en',num=5,stop=5,pause=2):
+for i in search(query,tld='co.in',country='result' ,lang='en',num=5,stop=5,pause=2):
      req=requests.get(i)
      soup = BeautifulSoup(req.text, 'html.parser')
      st.write("Title of this website: " )
