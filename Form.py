@@ -7,4 +7,4 @@ with st.form(key='my_form'):
        temp=temp-1
         
          
-    submit_button = st.form_submit_button(label='Submit')
+       submit_button = st.form_submit_button(label='Submit')
