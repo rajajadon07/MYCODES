@@ -51,7 +51,7 @@ elif option > 1 and option < 3:
       if count<temp:
            col2.header("Top result 2")
            count=count+1
-      for title in soup.find_all('title'limit=1):
+      for title in soup.find_all('title',limit=1):
               st.write(title.get_text())
               
 elif option > 1 and option > 2:
