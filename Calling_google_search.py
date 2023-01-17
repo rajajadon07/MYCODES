@@ -4,7 +4,9 @@ from bs4 import BeautifulSoup
 
 import requests
 
-query=st.text_input("Enter your text here")
+query=st.text_input("Please enter your query here")
+country_dropdown=st.selectbox('Please select your cocenrn country',
+                               ('India','France','Germany','Italy','Usa','China','Japan'))
 
 for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
      req=requests.get(i)
