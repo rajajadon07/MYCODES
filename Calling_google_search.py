@@ -19,7 +19,7 @@ if choice=="USA":
             st.write(title.get_text())
             st.write(i)
          
- elif choice=="CHINA":
+elif choice=="CHINA":
     result="CHINA"
     query=st.text_input("Please enter your query here")
     for i in search(query,tld='co.in',country=result ,lang='en',num=5,stop=5,pause=2):
@@ -30,7 +30,7 @@ if choice=="USA":
             st.write(title.get_text())
             st.write(i)
          
- elif choice=="RUSSIA":
+elif choice=="RUSSIA":
     result="RUSSIA"
     query=st.text_input("Please enter your query here")
     for i in search(query,tld='co.in',country=result ,lang='en',num=5,stop=5,pause=2):
@@ -41,7 +41,7 @@ if choice=="USA":
             st.write(title.get_text())
             st.write(i)
          
- elif choice=="BRAZIL":
+elif choice=="BRAZIL":
     result="BRAZIL"
     query=st.text_input("Please enter your query here")
     for i in search(query,tld='co.in',country=result ,lang='en',num=5,stop=5,pause=2):
@@ -52,7 +52,7 @@ if choice=="USA":
             st.write(title.get_text())
             st.write(i)
          
- elif choice=="FRANCE":
+elif choice=="FRANCE":
     result="FRANCE"
     query=st.text_input("Please enter your query here")
     for i in search(query,tld='co.in',country=result ,lang='en',num=5,stop=5,pause=2):
@@ -63,7 +63,7 @@ if choice=="USA":
             st.write(title.get_text())
             st.write(i)
          
- elif choice=="GERMANY":
+elif choice=="GERMANY":
     result="GERMANY"
     query=st.text_input("Please enter your query here")
     for i in search(query,tld='co.in',country=result ,lang='en',num=5,stop=5,pause=2):
