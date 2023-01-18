@@ -6,7 +6,7 @@ import requests
 
 st.title("Critical information nearby me")
 menu=["us", "uk", "fr", "de"]
-gl = st.sidebar.selectbox("Select your country region", ,menu)
+gl = st.sidebar.selectbox("Select your country region",menu)
 
 
 if gl=="USA":
