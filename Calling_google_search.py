@@ -8,7 +8,7 @@ st.title("Critical information nearby me")
 region = st.selectbox("Select your country region",("us", "uk", "fr", "de"))
 
 
-if gl=="us":
+if region=="us":
     query=st.text_input("Please enter your query here")
     st.write("Results for:", query)
     for i in search(query,tld='com',lang='en',num=5,stop=5,pause=2,region=region):
@@ -19,7 +19,7 @@ if gl=="us":
             st.write(title.get_text())
             st.write(i)
          
-elif gl=="br":
+elif region=="fr":
     query=st.text_input("Please enter your query here")
     st.write("Results for:", query)
     for i in search(query,tld='com',lang='en',num=5,stop=5,pause=2,region=region):
