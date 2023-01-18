@@ -10,7 +10,6 @@ openpyxl==3.0.6
 pikepdf==6.2.7
 fpdf==1.7.2
 google==3.0.0
-requests==v2.28.2
 beautifulsoup4
 selenium>=2.44.0,<3.0.0
 requests
@@ -20,3 +19,4 @@ future
 fake-useragent
 google-search==1.1.1
 beautifulsoup4==4.11.1
+requests==2.25.1
