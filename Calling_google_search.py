@@ -5,11 +5,11 @@ from bs4 import BeautifulSoup
 import requests
 
 st.title("Critical information nearby me")
-menu=["us", "uk", "fr", "de"]
+menu=["us", "uk", "fr", "de","br"]
 gl = st.sidebar.selectbox("Select your country region",menu)
 
 
-if gl=="USA":
+if gl=="us":
     query=st.text_input("Please enter your query here")
     for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2):
           req=requests.get(i)
@@ -19,7 +19,7 @@ if gl=="USA":
             st.write(title.get_text())
             st.write(i)
          
-elif gl=="CHINA":
+elif gl=="br":
     query=st.text_input("Please enter your query here")
     for i in search(query,tld='co.in',lang='en',num=5,stop=5,pause=2,):
           req=requests.get(i)
