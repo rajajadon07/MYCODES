@@ -11,7 +11,7 @@ region = st.selectbox("Select your country region",("us", "uk", "fr", "de"))
 if gl=="us":
     query=st.text_input("Please enter your query here")
     st.write("Results for:", query)
-    for i in search(query,tld='com',lang='en',num=5,stop=5,pause=2,region=region'):
+    for i in search(query,tld='com',lang='en',num=5,stop=5,pause=2,region=region):
           req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
           st.write("Title of this website: " )
