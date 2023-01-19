@@ -22,7 +22,7 @@ if st.button("Search"):
         for item in results["items"]:
            title = item["title"]
            link = item["link"]
-           st.write("Title: ", text)
+           st.write("Title: ", title)
            st.write("Link to the search result: ", link)
           
          
