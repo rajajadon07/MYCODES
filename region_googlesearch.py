@@ -16,7 +16,7 @@ if st.button("Search"):
         soup = search(query)
         for title in soup.find_all('title',limit=1):
             st.write(title.get_text())
-            st.write(url)
+            st.write(r)
         
 
         
