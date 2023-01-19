@@ -3,6 +3,7 @@ import pandas as pd
 from googlesearch import search
 import requests
 from bs4 import BeautifulSoup
+import json
 
 st.title("Critical information nearby me")
 query = st.text_input("Enter your query")
