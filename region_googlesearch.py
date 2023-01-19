@@ -14,7 +14,7 @@ for i in search(query,tld='com',lang='en',num=5,stop=5,pause=2):
        heading=st.write(title.get_text())
           
        data = {'link':[i],'Title':[heading],'source':['cnn','bbc']}
-       df = pd.DataFrame(data, index=[{'S.no'[1,2,3,4,5]}])
+       df = pd.DataFrame(data, index=[{'S.no':[1,2,3,4,5]}])
        st.dataframe(df)
        st.write(df)
 
