@@ -13,9 +13,10 @@ for i in search(query,tld='com',lang='en',num=5,stop=5,pause=2):
       for title in soup.find_all('title',limit=1):
        heading=st.write(title.get_text())
        sources='cnn','bbc','fox','google','cbs'
+       no='1','2','3','4','5'
           
-       data = {'link':[i],'Title':[heading],'source':[sources]}
-       df = pd.DataFrame(data,index=['S.NO:'[1,2,3,4,5]])
+       data = {'s.no':[no]'link':[i],'Title':[heading],'source':[sources]}
+       df = pd.DataFrame(data)
        st.dataframe(df)
     
 
