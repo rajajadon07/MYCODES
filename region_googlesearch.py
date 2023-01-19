@@ -5,8 +5,8 @@ import requests
 from bs4 import BeautifulSoup
 
 st.title("Critical information nearby me")
- query=st.text_input("Please enter your query here")
-    st.write("Results for:", query)
+query=st.text_input("Please enter your query here")
+st.write("Results for:", query)
     for i in search(query,tld='com',lang='en',num=5,stop=5,pause=2):
          req=requests.get(i)
           soup = BeautifulSoup(req.text, 'html.parser')
