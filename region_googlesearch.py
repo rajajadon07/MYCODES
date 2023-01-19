@@ -17,8 +17,6 @@ if st.button("Search"):
           r = requests.get(url=URL)
           data = BeautifulSoup(r.content, 'html.parser')
           return data
-        titles = data.findAll('title')
-        st.write(titles)
         results = search(query,api_key)
         st.write(results)
           
