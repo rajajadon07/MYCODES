@@ -16,10 +16,11 @@ if st.button("Search"):
           r = requests.get(URL)
           st.write(URL)
           soup = BeautifulSoup(r.text, 'html.parser')
-          return soup
-        soup = search(query)
           for title in soup.find_all('title',limit=1):
             st.write(title.get_text())
+          return soup
+        soup = search(query)
+          
          
         
 
