@@ -13,12 +13,12 @@ if st.button("Search"):
         def search(query):
           query = query.replace(" ", "+")
           URL = f"https://www.google.com/search?q={query}&site={website}&gl={region}"
-          r = requests.get(url = URL)
+          r = requests.get(URL)
           st.write(URL)
           soup = BeautifulSoup(r.text, 'html.parser')
           return soup
-        soup = search(query)
-        for title in soup.find_all('title',limit=1):
+          soup = search(query)
+          for title in soup.find_all('title',limit=1):
             st.write(title.get_text())
          
         
