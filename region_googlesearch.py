@@ -11,12 +11,13 @@ if st.button("Search"):
           query = query.replace(" ", "+")
           URL = f"https://www.google.com/search?q={query}"
           r = requests.get(url = URL)
+          st.write(URL)
           soup = BeautifulSoup(r.content, 'html.parser')
           return soup
         soup = search(query)
         for title in soup.find_all('title',limit=1):
             st.write(title.get_text())
-            st.write(URL)
+         
         
 
         
