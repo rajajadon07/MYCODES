@@ -3,7 +3,7 @@ import streamlit as st
 import PyPDF2
 import json
 
-file.pdf=st.file_uploader("upload your file",type[pdf])
+file.pdf=st.file_uploader("upload your file",type=["pdf"])
 # Open the PDF file
 with open('file.pdf', 'rb') as pdf_file:
     pdf_reader = PyPDF2.PdfFileReader(pdf_file)
