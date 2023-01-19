@@ -15,7 +15,7 @@ for i in search(query,tld='com',lang='en',num=5,stop=5,pause=2):
        sources='cnn','bbc','fox','google','cbs'
           
        data = {'link':[i],'Title':[heading],'source':[sources]}
-       df = pd.DataFrame(data)
+       df = pd.DataFrame(data,'S.NO:[1,2,3,4,5]')
        st.dataframe(df)
     
 
