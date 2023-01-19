@@ -15,8 +15,12 @@ if st.button("Search"):
           query = query.replace(" ", "+")
           URL = f"https://www.googleapis.com/customsearch/v1?key={api_key}&cx={cx}&q={query}"
           r = requests.get(url=URL)
-          data = r.json()
-          return data
+          soup = BeautifulSoup(r.content, 'html.parser')
+          return soup
+
+          soup = search(query)
+          titles = soup.findAll('title')
+          st.write(titles)
         results = search(query,api_key)
         st.write(results)
           
