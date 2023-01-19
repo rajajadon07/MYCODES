@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 st.title("Critical information nearby me")
 query = st.text_input("Enter your query")
-region = "br"
+region = "de"
 website = "www.cnn.com"
 
 if st.button("Search"):
