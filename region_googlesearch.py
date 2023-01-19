@@ -14,7 +14,7 @@ if st.button("Search"):
           soup = BeautifulSoup(r.content, 'html.parser')
           return soup
           soup = search(query)
-          titles = soup.findAll("div", {"class": "BNeawe iBp4i AP7Wnd"})
+          titles = soup.findAll('title')
           heading=st.write(titles)
 
           sources='cnn','bbc','fox','google','cbs'
