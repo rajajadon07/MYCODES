@@ -12,6 +12,7 @@ for i in search(query,tld='com',lang='en',num=5,stop=5,pause=2):
       soup = BeautifulSoup(req.text, 'html.parser')
       for title in soup.find_all('title',limit=1):
        heading=st.write(title.get_text())
+       st.write(i)
           
        data = {'link':[i],'Title':[heading],'source':['cnn','bbc']}
        df = pd.DataFrame(data, index=['r1','r2','r3','r4','r5'])
