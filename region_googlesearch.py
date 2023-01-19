@@ -18,7 +18,7 @@ if st.button("Search"):
           data = r.json()
           return data
         results = search(query,api_key,cx)
-        
+        st.write(data)
         
         for i in range(5):
           text = results['items'][i]['snippet']
