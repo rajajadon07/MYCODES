@@ -17,13 +17,7 @@ if st.button("Search"):
           titles = soup.findAll('title')
           heading=st.write(titles)
 
-          sources='cnn','bbc','fox','google','cbs'
-          no='1','2','3','4','5'
           
-          data = {'s.no':[no],'link':[url],'Title':[heading],'source':[sources]}
-          df = pd.DataFrame(data)
-          st.dataframe(df)
-    
 
 
  
