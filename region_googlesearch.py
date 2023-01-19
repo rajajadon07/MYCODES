@@ -20,7 +20,7 @@ if st.button("Search"):
         results = search(query,api_key,cx)
         
         for item in results["items"]:
-           temp=6
+           temp=5
            count=1
            if count<temp:
             title = item["title"]
