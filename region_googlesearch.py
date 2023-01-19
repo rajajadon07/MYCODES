@@ -17,8 +17,8 @@ for i in search(query,tld='com',lang='en',num=5,stop=5,pause=2):
        data = {'link':[i],'Title':[heading],'source':[sources]}
        df = pd.DataFrame(data)
        results=st.dataframe(df)
-       for data in df:
-            st.write(data)
+       for i in results:
+            st.write(i)
 
 
  
