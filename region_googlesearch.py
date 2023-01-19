@@ -12,7 +12,7 @@ if st.button("Search"):
           URL = f"https://www.google.com/search?q={query}"
           r = requests.get(url = URL)
           soup = BeautifulSoup(r.content, 'html.parser')
-        return soup
+          return soup
         soup = search(query)
         titles = soup.findAll('title')
         st.write(titles)
