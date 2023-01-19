@@ -10,5 +10,5 @@ if pdf_file is not None:
  st.write(pdf_details)
  pdf_type=pdf_file.type
 if pdf_type=="application/pdf":
- read_pdf=str(pdf_file.read(),"utf-8")
+ read_pdf=str(pdf_type.read(),"utf-8")
  st.text(read_pdf)
