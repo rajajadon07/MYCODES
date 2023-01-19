@@ -28,7 +28,7 @@ if st.button("Search"):
             date= item["date"]
             st.write("Title: ", title)
             st.write("Link: ", link)
-            st.write("Date":,date)
+            st.write("Date:",date)
             count=count+1
            
          
