@@ -11,7 +11,7 @@ api_key="AIzaSyDEhUWGKuYW8G3JR3CpStnveTqu1gXrBD4"
 cx="f23358939906b4e32"
 
 if st.button("Search"):
-        def search(query,api_key):
+        def search(query,api_key,cx):
           query = query.replace(" ", "+")
           URL = f"https://www.googleapis.com/customsearch/v1?key={api_key}&cx={cx}&q={query}"
           r = requests.get(url=URL)
