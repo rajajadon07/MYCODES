@@ -25,7 +25,7 @@ if st.button("Search"):
           link = results['items'][i]['link']
           
           source = results['items'][i]['displayLink']
-          st.write("Text: ", text)
+          st.write("description: ", text)
           st.write("Link: ", link)
           
           st.write("Source: ", source)
