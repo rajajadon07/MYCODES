@@ -12,19 +12,17 @@ if st.button("Search"):
           URL = f"https://www.google.com/search?q={query}"
           r = requests.get(url = URL)
           soup = BeautifulSoup(r.content, 'html.parser')
-        return soup
-    soup = search(query)
-    titles = soup.findAll("div", {"class": "BNeawe iBp4i AP7Wnd"})
-    heading=st.write(titles)
+          return soup
+          soup = search(query)
+          titles = soup.findAll("div", {"class": "BNeawe iBp4i AP7Wnd"})
+          heading=st.write(titles)
 
-
-
-       sources='cnn','bbc','fox','google','cbs'
-       no='1','2','3','4','5'
+          sources='cnn','bbc','fox','google','cbs'
+          no='1','2','3','4','5'
           
-       data = {'s.no':[no],'link':[url],'Title':[heading],'source':[sources]}
-       df = pd.DataFrame(data)
-       st.dataframe(df)
+          data = {'s.no':[no],'link':[url],'Title':[heading],'source':[sources]}
+          df = pd.DataFrame(data)
+          st.dataframe(df)
     
 
 
