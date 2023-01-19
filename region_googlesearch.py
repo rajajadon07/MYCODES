@@ -15,7 +15,7 @@ if st.button("Search"):
           URL = f"https://www.googleapis.com/customsearch/v1?key={AIzaSyDEhUWGKuYW8G3JR3CpStnveTqu1gXrBD4}&cx={f23358939906b4e32}&q={query}"
           r = requests.get(url=URL)
           data = r.json()
-          return data
+        return data
           results = search(query)
           st.write(results)
           
