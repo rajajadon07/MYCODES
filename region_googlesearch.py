@@ -15,9 +15,10 @@ for i in search(query,tld='com',lang='en',num=5,stop=5,pause=2):
        st.write(i)
           
        data = {'link':[i],'Title':[heading],'source':['cnn','bbc','fox','google']}
-       df = pd.DataFrame(data, index=['r1','r2','r3','r4','r5'])
+       df = pd.DataFrame(data)
        st.dataframe(df)
-       st.write(df)
+       for data in df:
+            st.write(data)
 
 
  
