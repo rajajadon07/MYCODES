@@ -19,16 +19,17 @@ if st.button("Search"):
           return data
         results = search(query,api_key,cx)
         
-          temp=5
-          count=1
-        for item in results["items"]:
-           if count<temp:
-            title = item["title"]
-            link = item["link"]
-            st.write("Title: ", title)
-            st.write("Link: ", link)
-           
-            count=count+1
+        
+        for i in range(5):
+          text = results['items'][i]['snippet']
+          link = results['items'][i]['link']
+          date = results['items'][i]['pagemap']['metatags'][0]['date']
+          source = results['items'][i]['displayLink']
+          st.write("Text: ", text)
+          st.write("Link: ", link)
+          st.write("Date: ", date)
+          st.write("Source: ", source)
+
            
          
         
