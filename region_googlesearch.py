@@ -27,7 +27,7 @@ if st.button("Search"):
             link = item["link"]
             st.write("Title: ", title)
             st.write("Link: ", link)
-                count=count+1
+            count=count+1
            
          
         
