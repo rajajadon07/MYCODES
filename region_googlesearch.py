@@ -18,7 +18,12 @@ if st.button("Search"):
           data = r.json()
           return data
         results = search(query,api_key)
-        st.write(results)
+        
+        for item in results["items"]:
+           text = item["title"]
+           link = item["link"]
+           st.write("Text: ", text)
+           st.write("Link: ", link)
           
          
         
