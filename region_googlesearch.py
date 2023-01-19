@@ -14,9 +14,10 @@ if st.button("Search"):
           soup = BeautifulSoup(r.content, 'html.parser')
           return soup
         soup = search(query)
-        titles = soup.findAll('title')
+        titles = soup.findAll("div", {"class": "BNeawe iBp4i AP7Wnd"})
         st.write(titles)
 
+        
           
 
 
