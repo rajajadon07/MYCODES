@@ -14,7 +14,7 @@ if st.button("Search"):
           query = query.replace(" ", "+")
           URL = f"https://www.google.com/search?q={query}&site={website}&gl={region}"
           r = requests.get(url = URL)
-          st.write(r)
+          st.write(query)
           soup = BeautifulSoup(r.content, 'html.parser')
           return soup
         soup = search(query)
