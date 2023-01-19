@@ -23,11 +23,11 @@ if st.button("Search"):
         for i in range(5):
           text = results['items'][i]['snippet']
           link = results['items'][i]['link']
-          date = results['items'][i]['pagemap']['metatags'][0]['date']
+          
           source = results['items'][i]['displayLink']
           st.write("Text: ", text)
           st.write("Link: ", link)
-          st.write("Date: ", date)
+          
           st.write("Source: ", source)
 
            
