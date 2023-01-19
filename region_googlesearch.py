@@ -19,16 +19,16 @@ if st.button("Search"):
           return data
         results = search(query,api_key,cx)
         
+          temp=5
+          count=1
         for item in results["items"]:
-           temp=5
-           count=1
            if count<temp:
             title = item["title"]
             link = item["link"]
             st.write("Title: ", title)
             st.write("Link: ", link)
            
-            count=count+2
+            count=count+1
            
          
         
