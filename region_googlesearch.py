@@ -17,7 +17,7 @@ if st.button("Search"):
           st.write(URL)
           soup = BeautifulSoup(r.text, 'html.parser')
           return soup
-          soup = search(query)
+    soup = search(query)
           for title in soup.find_all('title',limit=1):
             st.write(title.get_text())
          
