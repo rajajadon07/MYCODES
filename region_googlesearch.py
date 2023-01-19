@@ -14,7 +14,7 @@ for i in search(query,tld='com',lang='en',num=5,stop=5,pause=2):
        heading=st.write(title.get_text())
        st.write(i)
           
-       data = {'link':[i],'Title':[heading],'source':['cnn','bbc']}
+       data = {'link':[i],'Title':[heading],'source':['cnn','bbc','fox','google']}
        df = pd.DataFrame(data, index=['r1','r2','r3','r4','r5'])
        st.dataframe(df)
        st.write(df)
