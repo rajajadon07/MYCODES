@@ -6,10 +6,13 @@ from bs4 import BeautifulSoup
 
 st.title("Critical information nearby me")
 query = st.text_input("Enter your query")
+region = "us"
+website = "cnn.com"
+
 if st.button("Search"):
         def search(query):
           query = query.replace(" ", "+")
-          URL = f"https://www.google.com/search?q={query}"
+          URL = f"https://www.google.com/search?q={query}&site={website}&gl={region}"
           r = requests.get(url = URL)
           st.write(URL)
           soup = BeautifulSoup(r.content, 'html.parser')
