@@ -6,13 +6,13 @@ with st.form(key='my_form', clear_on_submit=True):
        st.write(arg)
        input_question=st.text_input(label='enter your question here')
        myFun('Living allowance ?', 'Supplier invoice ?')
-        if arg='Living allowance':
+       if arg='Living allowance':
           input_question='What is Living allowance ?'
           answer=st.text_input('It is the file received from the payroll department, which describes the allowances that had been incurred by the employee/Expat during the secondment period. Below mentioned screenshot is for your reference')
-        else:
+       else:
           input_question='Supplier invoice '
           answer='These are the invoices which are booked by the AP for payment and data has been used for calculation of the amount to be charged'
 
     
     
-submit_button = st.form_submit_button(label='Submit')
+  submit_button = st.form_submit_button(label='Submit')
