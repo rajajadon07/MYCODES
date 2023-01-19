@@ -4,6 +4,7 @@ with st.form(key='my_form', clear_on_submit=True):
   def myFun(*argv):
     for arg in argv:
        st.write(arg)
+       st.text_input(label='enter your question here')
        input_question=st.text_input(label='enter your question here')
        myFun('Living allowance ?', 'Supplier invoice ?')
        if arg=='Living allowance':
