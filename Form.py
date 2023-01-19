@@ -1,19 +1,37 @@
 import streamlit as st
+from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
+from pdfminer.converter import TextConverter
+from pdfminer.layout import LAParams
+from pdfminer.pdfpage import PDFPage
+from io import StringIO
+import json
+
+
 with st.form(key='my_form', clear_on_submit=True):
   title_SOP=st.title('SOP Questions form')
-  def myFun(*argv):
-    for arg in argv:
-       st.write(arg)
-       st.text_input(label='enter your question here')
-       input_question=st.text_input(label='enter your question here')
-  myFun('Living allowance ?', 'Supplier invoice ?')
-       if arg=='Living allowance':
-          input_question='What is Living allowance ?'
-          answer=st.text_input('It is the file received from the payroll department, which describes the allowances that had been incurred by the employee/Expat during the secondment period. Below mentioned screenshot is for your reference')
-       else:
-          input_question='Supplier invoice '
-          answer='These are the invoices which are booked by the AP for payment and data has been used for calculation of the amount to be charged'
+pdf_file=st.file_uploader("upload your pdf file",type=["pdf"])
+st.button("Process")
 
-    
-    
-  submit_button = st.form_submit_button(label='Submit')
+def pdf_to_json(pdf_file):
+    rsrcmgr = PDFResourceManager()
+    retstr = StringIO()
+    codec = 'utf-8'
+    laparams = LAParams()
+    device = TextConverter(rsrcmgr, retstr, codec=codec, laparams=laparams)
+    fp = open(pdf_path, 'rb')
+    interpreter = PDFPageInterpreter(rsrcmgr, device)
+    password = ""
+    maxpages = 0
+    caching = True
+    pagenos=set()
+
+    for page in PDFPage.get_pages(fp, pagenos, maxpages=maxpages, password=password,caching=caching, check_extractable=True):
+        interpreter.process_page(page)
+
+    text = retstr.getvalue()
+    fp.close()
+    device.close()
+    retstr.close()
+    return json.loads(text)
+
+ 
