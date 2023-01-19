@@ -17,13 +17,13 @@ if st.button("Search"):
           r = requests.get(url=URL)
           data = r.json()
           return data
-        results = search(query,api_key)
+        results = search(query,api_key,cx)
         
         for item in results["items"]:
-           text = item["title"]
+           title = item["title"]
            link = item["link"]
-           st.write("Text: ", text)
-           st.write("Link: ", link)
+           st.write("Title: ", text)
+           st.write("Link to the search result: ", link)
           
          
         
