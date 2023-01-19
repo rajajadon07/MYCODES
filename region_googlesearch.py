@@ -12,7 +12,6 @@ for i in search(query,tld='com',lang='en',num=5,stop=5,pause=2):
       soup = BeautifulSoup(req.text, 'html.parser')
       for title in soup.find_all('title',limit=1):
        heading=st.write(title.get_text())
-       st.write(i)
        sources='cnn','bbc','fox','google','cbs'
           
        data = {'link':[i],'Title':[heading],'source':[sources]}
