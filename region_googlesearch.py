@@ -19,7 +19,7 @@ if st.button("Search"):
           return news_data
        
         def main():
-         news_data = get_news()
+         news_data = get_news(query,api_key)
          for article in news_data["articles"]:
               st.title(article["title"])
               st.write(article["description"])
