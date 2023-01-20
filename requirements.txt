@@ -15,4 +15,4 @@ beautifulsoup4
 requests
 jsons==1.6.3
 pdfminer==20191125
-gnews
+
