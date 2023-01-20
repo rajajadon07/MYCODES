@@ -10,7 +10,6 @@ openpyxl==3.0.6
 pikepdf==6.2.7
 fpdf==1.7.2
 google==3.0.0
-requests
 google-search-results==2.4.1
 beautifulsoup4==4.11.1
 requests==2.25.1
