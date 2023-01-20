@@ -15,15 +15,17 @@ if st.button("Search"):
           query = query.replace(" ", "+")
           URL = f"https://newsapi.org/v2/top-headlines?sources=google-news&apiKey="+ api_key +query
           r = requests.get(url=URL)
-          data = r.json()
-          return data
-        results = search(query,api_key)
-        
-         news_data = get_news()
-         for article in news_data["articles"]:
-            st.title(article["title"])
-            st.write(article["description"])
-          
+          news_data = response.json()
+          return news_data
+       
+        def main():
+           news_data = get_news()
+           for article in news_data["articles"]:
+              st.title(article["title"])
+              st.write(article["description"])
+
+if __name__ == "__main__":
+    main()
          
 
 
