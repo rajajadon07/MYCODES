@@ -16,12 +16,11 @@ def get_news():
     url = "https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=" + api_key + query
     response = requests.get(url)
     news_data = response.json()
-   
     return news_data
 
 def main():
     news_data = get_news()
-    for article in news_data["articles"]:
+    for article in news_data:
         st.title(article["title"])
         st.write(article["description"])
         st.write(article["url"])
