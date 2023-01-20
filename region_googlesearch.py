@@ -9,7 +9,7 @@ st.title("Critical information nearby me")
 query = st.text_input("Enter your query")
 st.button("Search")
 
-country_code=st.side.selectbox("select your country",
+country_code=st.sidebar.selectbox("select your country",
                   ('us','uk'))
 
 def get_news():
