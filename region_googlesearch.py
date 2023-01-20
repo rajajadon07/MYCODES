@@ -22,9 +22,9 @@ if st.button("Search"):
 
  def main():
     news_data = get_news()
-    for article in news_data["articles"]:
+    for article in news_data:
         st.title(article["title"])
-        st.write(article["description"])
+        st.write(article["link"])
         st.write(article["url"])
        
 
