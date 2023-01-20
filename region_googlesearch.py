@@ -14,7 +14,7 @@ country_code=st.sidebar.selectbox("select your country",
                   ('us','uk'))
 if st.button("Search"):
  def get_news():
-    url = "https://www.googleapis.com/customsearch/v1?key={api_key}&cx={cx}&country={country_code}&from=2022-01-20&to=2023-01-20&pageSize=50&q={query}"
+    url = "https://www.googleapis.com/customsearch/v1?key={api_key}&cx={cx}&country={country_code}&pageSize=50&q={query}"
     response = requests.get(url)
     news_data = response.json()
     st.write(news_data)
