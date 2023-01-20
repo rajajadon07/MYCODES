@@ -19,7 +19,7 @@ if st.button("Search"):
           return data
         results = search(query,api_key,cx)
         
-        for i in range(50):
+        for i in range(10):
           text = results['items'][i]['snippet']
           link = results['items'][i]['link']
           title = results['items'][i]['title']
