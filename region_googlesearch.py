@@ -7,6 +7,7 @@ import json
 
 st.title("Critical information nearby me")
 query = st.text_input("Enter your query")
+st.button("Search")
 
 
 
@@ -23,6 +24,8 @@ def main():
     for article in news_data["articles"]:
         st.title(article["title"])
         st.write(article["description"])
+        st.write(article["url"])
+       
 
 if __name__ == "__main__":
     main()
