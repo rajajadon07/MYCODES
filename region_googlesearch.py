@@ -17,7 +17,7 @@ if st.button("Search"):
     url = "https://www.googleapis.com/customsearch/v1?key={api_key}&cx={cx}&country=country_code&from=2022-01-20&to=2023-01-20&pageSize=50&q={query}"
     response = requests.get(url)
     news_data = response.json()
-
+    st.write(news_data)
     return news_data
 
  def main():
