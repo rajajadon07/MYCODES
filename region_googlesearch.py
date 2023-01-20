@@ -12,7 +12,7 @@ query = st.text_input("Enter your query")
 
 def get_news():
     api_key = "AIzaSyDEhUWGKuYW8G3JR3CpStnveTqu1gXrBD4"
-    url = "https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=" + api_key
+    url = "https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=" + api_key + query
     response = requests.get(url)
     news_data = response.json()
     return news_data
