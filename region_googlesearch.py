@@ -7,20 +7,20 @@ import json
 
 st.title("Critical information nearby me")
 query = st.text_input("Enter your query")
-st.button("Search")
+api_key="AIzaSyDEhUWGKuYW8G3JR3CpStnveTqu1gXrBD4"
+cx="f23358939906b4e32"
 
 country_code=st.sidebar.selectbox("select your country",
                   ('us','uk'))
-
-def get_news():
-    api_key = "73770f3d51ef4ebbb571859c4ac153c1"
-    url = "https://newsapi.org/v2/query?sources=google-news&country={country_code}&apiKey={api_key}"
+if st.button("Search"):
+ def get_news():
+    url = "https://www.googleapis.com/customsearch/v1?key={api_key}&cx={cx}&country=country_code&from=2022-01-20&to=2023-01-20&pageSize=50&q={query}"
     response = requests.get(url)
     news_data = response.json()
 
     return news_data
 
-def main():
+ def main():
     news_data = get_news()
     for article in news_data["articles"]:
         st.title(article["title"])
