@@ -1,12 +1,16 @@
 import pdfplumber
+from PyPDF2 import PdfWriter
 import streamlit as st 
 import PyPDF2
 import json
+import os
 
-file=st.file_uploader("upload your file",type=["json"])
+if os.path.exists('export.json'):
+    with open('export.json', 'rb') as f:
+        data = json.load(f)
+        st.write(data)
+else:
+    st.warning("File not found.")
 
-# Open the PDF file
-with open('export.json', 'rb') as f:
- data=json.load(f)
- st.write(data)
+
 
