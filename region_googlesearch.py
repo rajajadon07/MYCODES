@@ -14,7 +14,7 @@ if st.button("Search"):
         def get_news(query,api_key):
           query = query.replace(" ", "+")
           URL = f"https://newsapi.org/v2/top-headlines?sources=google-news&apiKey="+ api_key +query
-          r = requests.get(url=URL)
+          reponse = requests.get(url=URL)
           news_data = response.json()
           return news_data
        
