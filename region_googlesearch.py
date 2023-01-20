@@ -28,7 +28,7 @@ if st.button("Search"):
           st.write("Title :",title)
           st.write("description : ", text)
           st.write("Link: ", link)
-          st.write("details :" details ,)
+          st.write("details :", details )
           
           
      
