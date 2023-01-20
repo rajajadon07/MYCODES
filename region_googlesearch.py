@@ -23,12 +23,15 @@ if st.button("Search"):
         for i in range(5):
           text = results['items'][i]['snippet']
           link = results['items'][i]['link']
-          
-          source = results['items'][i]['displayLink']
-          st.write("description: ", text)
+          title = results['items'][i]['title']
+          details=results[items][i]["og:description"]
+          st.write("Title :",title)
+          st.write("description : ", text)
           st.write("Link: ", link)
+          st.write("details :" details ,)
           
-          st.write("Source: ", source)
+          
+     
 
            
          
