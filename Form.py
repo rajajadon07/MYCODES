@@ -1,4 +1,4 @@
-
+import pdfplumber
 import streamlit as st 
 import PyPDF2
 import json
