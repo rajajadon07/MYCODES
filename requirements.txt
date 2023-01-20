@@ -22,3 +22,4 @@ beautifulsoup4==4.11.1
 requests==2.25.1
 jsons==1.6.3
 pdfminer==20191125
+gnews==0.2.7
