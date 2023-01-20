@@ -23,6 +23,9 @@ if st.button("Search"):
           text = results['items'][i]['snippet']
           link = results['items'][i]['link']
           title = results['items'][i]['title']
+          data = []text,link,title]
+          st.table(pd.DataFrame(data))
+          st.dataframe(df)
           st.write("Title :",title)
           st.write("description : ", text)
           st.write("Link: ", link)
