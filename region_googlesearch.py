@@ -16,6 +16,7 @@ if st.button("Search"):
           URL = f"https://newsapi.org/v2/top-headlines?sources=google-news&apiKey="+ api_key +query
           response = requests.get(url=URL)
           news_data = response.json()
+          st.write(news_data)
           return news_data
        
         def main():
