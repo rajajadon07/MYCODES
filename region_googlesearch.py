@@ -13,7 +13,7 @@ cx="f23358939906b4e32"
 if st.button("Search"):
         def search(query,api_key):
           query = query.replace(" ", "+")
-          URL = f"https://newsapi.org/v2/top-headlines?sources=google-news&apiKey="+ api_key +cx={cx} +q={query}"
+          URL = f"https://newsapi.org/v2/top-headlines?sources=google-news&apiKey="+ api_key +query
           r = requests.get(url=URL)
           data = r.json()
           return data
