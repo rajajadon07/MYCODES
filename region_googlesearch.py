@@ -11,16 +11,16 @@ api_key="AIzaSyDEhUWGKuYW8G3JR3CpStnveTqu1gXrBD4"
 cx="f23358939906b4e32"
 
 if st.button("Search"):
-        def get_news(query,api_key):
+        def get_news():
           query = query.replace(" ", "+")
-          URL = f"https://newsapi.org/v2/top-headlines?sources=google-news&apiKey="+ api_key +query
+          URL = f"https://newsapi.org/v2/top-headlines?sources=google-news&apiKey="+ api_key
           response = requests.get(url=URL)
           news_data = response.json()
           st.write(news_data)
           return news_data
        
         def main():
-         news_data = get_news(query,api_key)
+         news_data = get_news()
          for article in news_data["articles"]:
               st.title(article["title"])
               st.write(article["description"])
