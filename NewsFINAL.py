@@ -6,7 +6,7 @@ import pandas as pd
 import pprint as pp
 import requests
 from bs4 import BeautifulSoup
-import datetime
+from datetime import datetime,timedelta
 
 
 def top_headlines():
