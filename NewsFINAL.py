@@ -9,17 +9,17 @@ import datetime
 
 
 def top_headlines():
-            query=st.text_input('enter your query')
-            from datetime import datetime, timedelta
-            def date(base):
-                date_list=[]
-                yr=datetime.today().year
-                if (yr%400)==0 or ((yr%100!=0) and (yr%4==0)):
+        query=st.text_input('enter your query')
+        from datetime import datetime, timedelta
+        def date(base):
+              date_list=[]
+              yr=datetime.today().year
+              if (yr%400)==0 or ((yr%100!=0) and (yr%4==0)):
                     numdays=366
                     date_list.append([base - timedelta(days=x) for x in range(366)])
-                else:
-                    numdays=365
-                    date_list.append([base - timedelta(days=x) for x in range(365)])
+              else:
+                numdays=365
+                date_list.append([base - timedelta(days=x) for x in range(365)])
                 newlist=[]
                 for i in date_list:
                     for j in sorted(i):
