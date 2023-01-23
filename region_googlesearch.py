@@ -13,7 +13,7 @@ country_id=st.sidebar.selectbox('select your country',
 
 query=st.text_input('enter your query')
 if st.button('Search'):
-   url = f'https://gnews.io/api/v3/search?q={query}&topic={keyword}&sort_by={publishedAt}&country={country_id}&token={api_key}'
+   url = f'https://gnews.io/api/v3/search?q={query}&topic={keyword}&sort_by=publishedAt&country={country_id}&token={api_key}'
    news = requests.get(url).json()
                                 
    for article in news['articles']:
