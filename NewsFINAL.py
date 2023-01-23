@@ -10,8 +10,7 @@ import datetime
 
 
 def top_headlines():
-   
-         
+            query=st.text_input('enter your query')
             from datetime import datetime, timedelta
             def date(base):
                 date_list=[]
