@@ -8,10 +8,10 @@ from gnews import GNews
 
 
 api_key = '96cff03d866a222cb5837f417a57eb85'
-topic = st.sidebar.selectbox("Topic", ["health,science,breaking news"])
+topic = st.sidebar.selectbox("Topic", ["health","science","breaking news"])
 country = st.sidebar.selectbox("Country", ["us", "in", "gb", "fr", "jp","gb"])
 date_from = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")
-date_to = datetime.now().strftime("%Y-%m-%d")
+date_to = (datetime.now().strftime("%Y-%m-%d")
 
 query=st.text_input('enter your query')        
 if st.button('Search'):
