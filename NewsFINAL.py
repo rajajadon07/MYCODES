@@ -9,6 +9,17 @@ import datetime
 
 
 def top_headlines():
+    country=st.text_input("Which country are you interested in?")
+    category=st.text_input("""Which category are you interested in? \nHere are the categories to choose from: 
+                   \nbusiness\nentertainment\ngeneral\nhealth\nscience\ntechnology""")
+    
+    top_headlines = newsapi.get_top_headlines(category=category,language='en',country=country)
+    top_headlines=json_normalize(top_headlines['articles'])
+    newdf=top_headlines[["title","url"]]
+    dic=newdf.set_index('title')['url'].to_dict()
+    top_headlines
+    for (k,v) in dic.items():
+           st.write(k+"\n\n"+v)
            query=st.text_input('enter your query')
            def date(base):
               date_list=[]
@@ -55,3 +66,4 @@ def top_headlines():
                 return newdf
            df1=pd.DataFrame(func('Travel risk'))
           
+top_headlines()
