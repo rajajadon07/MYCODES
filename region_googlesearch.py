@@ -8,7 +8,7 @@ from gnews import GNews
 
 
 api_key = '96cff03d866a222cb5837f417a57eb85'
-topic = st.sidebar.selectbox("Topic", ["health", "sports", "entertainment", "science", "technology"])
+topic = st.sidebar.selectbox("Topic", ["travel"])
 country = st.sidebar.selectbox("Country", ["us", "in", "gb", "fr", "jp"])
 
 query=st.text_input('enter your query')
