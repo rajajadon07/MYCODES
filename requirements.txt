@@ -9,4 +9,4 @@ beautifulsoup4
 requests
 jsons==1.6.3
 selenium==4.7.2
-gnewsclient==1.12
+gnews==0.2.7
