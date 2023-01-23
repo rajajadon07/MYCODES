@@ -1,3 +1,4 @@
+import streamlit as st
 from newsapi import NewsApiClient
 newsapi = NewsApiClient(api_key='73770f3d51ef4ebbb571859c4ac153c1')
 from pandas.io.json import json_normalize
