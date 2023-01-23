@@ -16,10 +16,10 @@ search_results = client.search(query, max_results=10)
 
 
 for story in search_results:
-    print(story['title'])
-    print(story['description'])
-    print(story['link'])
-    print('\n')
+    st.write(story['title'])
+    st.write(story['description'])
+    st.write(story['link'])
+   
 
 
 
