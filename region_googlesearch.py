@@ -4,7 +4,7 @@ from googlesearch import search
 import requests
 from bs4 import BeautifulSoup
 import json
-import gnewsclient import Client
+from  gnewsclient import Client
 
 
 client = gnews.Client()
