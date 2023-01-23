@@ -6,16 +6,23 @@ from bs4 import BeautifulSoup
 import json
 from gnews import GNews
 
-topic=st.text_input('enter your query')
-if st.button('Search'):
-  keyword=('Threats,Risk,Danger,Riots, issues , pandemic , riots, agression')
-  country = st.sidebar.selectbox('select your country',
-                              ('us','uk'))
-  stories= GNews.get_top_news(topic) 
+keyword=('Threats,Risk,Danger,Riots, issues , pandemic , riots, agression')
+api_key = '96cff03d866a222cb5837f417a57eb85'
+country_id=st.sidebar.selectbox('select your country,
+                                ('USA','UK')')
 
-  for story in top_stories:
-    st.markdown(f"- [{story['title']}]({story['link']})")
-    st.markdown(story['description'])
+query=st.text_input('enter your query')
+if st.button('Search'):
+   url = f'https://gnews.io/api/v3/search?q=querys&topic=keywords&sort_by=publishedAt&country=country_id&token={api_key}'
+   news = requests.get(url).json()
+                                
+   for article in news['articles']:
+      st.write("Title:", article['title'])
+      st.write("Published at:", article['publishedAt'])
+      st.write("Source:", article['source']['name'])
+      st.write("Link:", article['url'])
+      
+
 
 
 
