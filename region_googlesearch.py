@@ -15,8 +15,7 @@ date_to = datetime.now().strftime("%Y-%m-%d")
 
 query=st.text_input('enter your query')        
 if st.button('Search'):
-   url = f'https://gnews.io/api/v3/search?q={query}&topic={topic}&sort_by=publishedAt&country={country}&date_from = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")
-date_to = datetime.now().strftime("%Y-%m-%d")&token={api_key}'
+   url = f'https://gnews.io/api/v3/search?q={query}&topic={topic}&sort_by=publishedAt&country={country}&date_from={date_from}&date_to={date_to}&token={api_key}'
    news = requests.get(url).json()
                                 
    for article in news['articles']:
