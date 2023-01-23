@@ -16,7 +16,7 @@ country = st.sidebar.selectbox("Country", ["us", "in", "gb", "fr", "jp","gb"])
 datefrom = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")
 dateto = (datetime.now().strftime("%Y-%m-%d")
 
-
+if st.button('Search'):
            
    url = f'https://gnews.io/api/v3/search?q={query}&topic={topic}&country={country}&date_from={datefrom}&date_to={dateto}&token={api_key}'
    news = requests.get(url).json()
