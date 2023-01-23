@@ -4,34 +4,19 @@ from googlesearch import search
 import requests
 from bs4 import BeautifulSoup
 import json
+from gnewsclient import Client
 
-st.title("Critical information nearby me")
-query = st.text_input("Enter your query")
-api_key="73770f3d51ef4ebbb571859c4ac153c1"
+client = Client()
+client.language = 'en'
+client.location = 'United States'
+client.topic = 'top_stories'
 
+data = client.get_news()
 
-country_code=st.sidebar.selectbox("select your country",
-                  ('us','uk'))
-if st.button("Search"):
-  
- def get_news():
-    url = "https://www.google.com/search?q={}&tbm=nws".format(query)
-    response = requests.get(url)
-    news_data = response.json()
-    st.write(news_data)
-    return news_data
-
- def main():
-  
-    news_data = get_news()
-    for article in news_data:
-        st.title(article["title"])
-        st.write(article["link"])
-        st.write(article["url"])
-       
- if __name__ == "__main__":
-      main()
-
+for i in range(5):
+    st.write(data[i]['title'])
+    st.write(data[i]['link'])
+    
     
 
 
