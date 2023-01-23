@@ -4,7 +4,7 @@ from googlesearch import search
 import requests
 from bs4 import BeautifulSoup
 import json
-import gnews from GNews
+from gnews import GNews
 
 topic=.text_input('enter your query')
 keyword=('Threats,Risk,Danger,Riots, issues , pandemic , riots, agression')
