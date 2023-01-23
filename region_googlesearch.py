@@ -8,8 +8,8 @@ from gnews import GNews
 
 
 api_key = '96cff03d866a222cb5837f417a57eb85'
-topic = st.selectbox("Topic", ["health", "sports", "entertainment", "science", "technology"])
-country = st.selectbox("Country", ["us", "in", "gb", "fr", "jp"])
+topic = st.sidebar.selectbox("Topic", ["health", "sports", "entertainment", "science", "technology"])
+country = st.sidebar.selectbox("Country", ["us", "in", "gb", "fr", "jp"])
 
 query=st.text_input('enter your query')
 if st.button('Search'):
