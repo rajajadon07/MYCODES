@@ -19,7 +19,7 @@ if st.button('Search'):
    for article in news['articles']:
       st.write("Title:", article['title'])
       st.write("Published at:", article['publishedAt'])
-      st.write("description":", article['description'])
+      st.write("description:", article['description'])
       st.write("Source:", article['source']['name'])
       st.write("Link:", article['url'])
      
