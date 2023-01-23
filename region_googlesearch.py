@@ -4,15 +4,15 @@ from googlesearch import search
 import requests
 from bs4 import BeautifulSoup
 import json
-from  gnewsclient import Client
+from  gnewsclient import gnewsclient
 
 
 client = gnews.Client()
 
-
-
 query = st.text_input('enter your query')
-search_results = client.search(query, max_results=10)
+country = st.sidebar.selectbox('select your country',
+                              ('us','uk'))
+search_results = client.search(query,location='country', max_results=10)
 
 
 for story in search_results:
