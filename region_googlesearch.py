@@ -15,7 +15,7 @@ country_code=st.sidebar.selectbox("select your country",
 if st.button("Search"):
   
  def get_news():
-    url = "https://www.google.com/search?q={}&tbm=nws".format(query)"
+    url = "https://www.google.com/search?q={}&tbm=nws".format(query)
     response = requests.get(url)
     news_data = response.json()
     st.write(news_data)
