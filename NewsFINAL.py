@@ -42,8 +42,8 @@ def top_headlines():
                 for i in range(len(x)):
                     to_dt.append(last_30(datetime.today())[i].date())
                 return to_dt
-            from_list=from_dt(last_30(datetime.today()))
-            to_list=to_dt(last_30(datetime.today()))
+           from_list=from_dt(last_30(datetime.today()))
+           to_list=to_dt(last_30(datetime.today()))
           
            def func(query):
                 newdf=pd.DataFrame()
