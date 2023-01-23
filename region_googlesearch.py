@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 import json
 from gnews import GNews
 
-keyword=('Threats,Risk,Danger,Riots, issues , pandemic , riots, agression')
+keyword=st.sidebar.selectbox('Threats','Risk,Danger','Riots','issues' , 'pandemic' , 'riots', 'agression')
 api_key = '96cff03d866a222cb5837f417a57eb85'
 country_id=st.sidebar.selectbox('select your country',
                                 ('USA','UK'))
