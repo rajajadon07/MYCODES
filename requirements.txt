@@ -6,7 +6,7 @@ pandas==1.2.0
 google==3.0.0
 google-search-results==2.4.1
 beautifulsoup4
-requests==2.21.0
+requests
 jsons==1.6.3
 selenium==4.7.2
 gnews==0.2.7
