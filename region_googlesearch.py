@@ -4,7 +4,7 @@ from googlesearch import search
 import requests
 from bs4 import BeautifulSoup
 import json
-from gnewsclient import Client
+from gnewsclient import gnewsclient
 
 client = Client()
 client.language = 'en'
