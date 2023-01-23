@@ -27,9 +27,8 @@ if st.button("Search"):
         st.write(article["link"])
         st.write(article["url"])
        
-
 if __name__ == "__main__":
-    main()
+      main()
 
     
 
