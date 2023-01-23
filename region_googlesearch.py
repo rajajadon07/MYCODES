@@ -7,7 +7,7 @@ import json
 from  gnewsclient import gnewsclient
 
 
-client = gnews.Client()
+client = gnewsclient.Client()
 
 query = st.text_input('enter your query')
 country = st.sidebar.selectbox('select your country',
