@@ -16,7 +16,7 @@ country = st.sidebar.selectbox("Country", ["us", "in", "gb", "fr", "jp","gb"])
 
 if st.button('Search'):
            
-   url = f'https://gnews.io/api/v3/search?q={query}&topic={topic}&max_results=100&country={country}&token={api_key}'
+   url = f'https://gnews.io/api/v3/search?q={query}&topic={topic}&max=100&country={country}&token={api_key}'
    news = requests.get(url).json()
                                 
    for article in news['articles']:
