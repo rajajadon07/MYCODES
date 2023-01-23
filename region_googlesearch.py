@@ -8,10 +8,7 @@ from gnewsclient import gnewsclient
 country=st.sidebar.selectbox('enter your country',
                      ('us','uk'))
 
-client = gnewsclient.NewsClient(language='english', location='country', topic='Business', max_results=10)
-client.language = 'en'
-client.location = 'United States'
-client.topic = 'top_stories'
+client = gnewsclient.NewsClient(language='english', location='country', topic='Business', max_results=3)
 
 data = client.get_news()
 
