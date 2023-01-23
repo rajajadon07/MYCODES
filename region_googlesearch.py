@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 import json
 from gnews import GNews
 
-topic=.text_input('enter your query')
+topic=st.text_input('enter your query')
 keyword=('Threats,Risk,Danger,Riots, issues , pandemic , riots, agression')
 country = st.sidebar.selectbox('select your country',
                               ('us','uk'))
