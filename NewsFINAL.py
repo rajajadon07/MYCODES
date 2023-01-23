@@ -9,7 +9,7 @@ import datetime
 
 
 def top_headlines():
-        query=st.text_input('enter your query')
+           query=st.text_input('enter your query')
            def date(base):
               date_list=[]
               yr=datetime.today().year
