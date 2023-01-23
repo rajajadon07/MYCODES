@@ -10,7 +10,7 @@ import datetime
 
 def top_headlines():
         query=st.text_input('enter your query')
-            def date(base):
+           def date(base):
               date_list=[]
               yr=datetime.today().year
               if (yr%400)==0 or ((yr%100!=0) and (yr%4==0)):
@@ -25,19 +25,19 @@ def top_headlines():
                         newlist.append(j)
                 return newlist
 
-            def last_30(base):
+           def last_30(base):
 
                 date_list=[base - timedelta(days=x) for x in range(30)]
                 return sorted(date_list)
 
 
-            def from_dt(x):
+           def from_dt(x):
                 from_dt=[]
                 for i in range(len(x)):
                     from_dt.append(last_30(datetime.today())[i-1].date())
                 return from_dt
 
-            def to_dt(x):
+           def to_dt(x):
                 to_dt=[]
                 for i in range(len(x)):
                     to_dt.append(last_30(datetime.today())[i].date())
@@ -45,7 +45,7 @@ def top_headlines():
             from_list=from_dt(last_30(datetime.today()))
             to_list=to_dt(last_30(datetime.today()))
           
-            def func(query):
+           def func(query):
                 newdf=pd.DataFrame()
                 for (from_dt,to_dt) in zip(from_list,to_list):
                     all_articles = newsapi.get_everything(q=query,language='en',sort_by='relevancy',  from_param=from_dt,to=to_dt)
