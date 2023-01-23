@@ -4,10 +4,10 @@ from googlesearch import search
 import requests
 from bs4 import BeautifulSoup
 import json
-from  gnewsclient import gnewsclient
+import gnews
 
 
-client = gnewsclient.Client()
+client = gnews.Client()
 
 query = st.text_input('enter your query')
 country = st.sidebar.selectbox('select your country',
