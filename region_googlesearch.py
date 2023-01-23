@@ -4,22 +4,22 @@ from googlesearch import search
 import requests
 from bs4 import BeautifulSoup
 import json
-import gnews
+import gnews from GNews
 
-
-client = gnews.Client()
-
-query = st.text_input('enter your query')
+topic=.text_input('enter your query')
+keyword=('Threats,Risk,Danger,Riots, issues , pandemic , riots, agression')
 country = st.sidebar.selectbox('select your country',
                               ('us','uk'))
-search_results = client.search(query,location='country', max_results=10)
+stories= GNews.get_news_by_topic(topic) 
+
+for story in top_stories:
+    st.markdown(f"- [{story['title']}]({story['link']})")
+    st.markdown(story['description'])
 
 
-for story in search_results:
-    st.write(story['title'])
-    st.write(story['description'])
-    st.write(story['link'])
-   
+
+
+
 
 
 
