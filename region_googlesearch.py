@@ -5,6 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from gnews import GNews
+from datetime import datetime, timedelta
 
 
 api_key = '96cff03d866a222cb5837f417a57eb85'
