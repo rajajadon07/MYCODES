@@ -18,7 +18,7 @@ date_to = (datetime.now().strftime("%Y-%m-%d")
 
 
            
-   url = f'https://gnews.io/api/v3/search?q={query}&topic={topic}&country={country}&date_from={date_from}&date_to={date_to}&token{api_key}'
+   url = f'https://gnews.io/api/v3/search?q={query}&topic={topic}&country={country}&date_from={date_from}&date_to={date_to}&token={api_key}'
    news = requests.get(url).json()
                                 
    for article in news['articles']:
