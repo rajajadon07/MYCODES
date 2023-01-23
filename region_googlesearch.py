@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from gnewsclient import gnewsclient
-country=st.sidebar.selectbox('enter your country'
+country=st.sidebar.selectbox('enter your country',
                      ('us','uk'))
 
 client = gnewsclient.NewsClient(language='english', location='country', topic='Business', max_results=50)
