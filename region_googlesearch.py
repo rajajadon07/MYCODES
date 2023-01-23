@@ -11,7 +11,7 @@ if st.button('Search'):
   keyword=('Threats,Risk,Danger,Riots, issues , pandemic , riots, agression')
   country = st.sidebar.selectbox('select your country',
                               ('us','uk'))
-  stories= GNews.get_top_news(WORLD) 
+  stories= GNews.get_top_news(topic) 
 
   for story in top_stories:
     st.markdown(f"- [{story['title']}]({story['link']})")
