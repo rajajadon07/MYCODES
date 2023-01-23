@@ -7,8 +7,8 @@ import json
 
 st.title("Critical information nearby me")
 query = st.text_input("Enter your query")
-api_key="AIzaSyDEhUWGKuYW8G3JR3CpStnveTqu1gXrBD4"
-cx="f23358939906b4e32"
+api_key="73770f3d51ef4ebbb571859c4ac153c1"
+
 
 country_code=st.sidebar.selectbox("select your country",
                   ('us','uk'))
