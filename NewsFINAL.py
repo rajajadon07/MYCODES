@@ -10,8 +10,7 @@ import datetime
 
 def top_headlines():
         query=st.text_input('enter your query')
-        from datetime import datetime, timedelta
-        def date(base):
+            def date(base):
               date_list=[]
               yr=datetime.today().year
               if (yr%400)==0 or ((yr%100!=0) and (yr%4==0)):
