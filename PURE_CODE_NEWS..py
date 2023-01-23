@@ -8,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 #%%
 
-      code= def top_headlines():
+       code=def top_headlines():
                 country=input("Which country are you interested in?")
                 category=input("""Which category are you interested in? \nHere are the categories to choose from: 
                                \nbusiness\nentertainment\ngeneral\nhealth\nscience\ntechnology""")
